@@ -96,7 +96,7 @@ void correio(){
     // Fazer entrada dos dados de autenticação
     transport->setProperty("options.need-authentication", true);
     transport->setProperty("auth.username", "felipe.rocoelho@gmail.com");
-    transport->setProperty("auth.password", "rhoe yuld wmxa pvpe");
+    transport->setProperty("auth.password", "");
     
     transport->setProperty("connection.tls", true);
     transport->setProperty("connection.tls.verify-certificate", true);
