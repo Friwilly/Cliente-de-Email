@@ -55,7 +55,13 @@ void correio(){
         std::getline(std::cin >> std::ws, caminho);
         //verificar se o caminho é  valido
         
-        tipo = caminho.substr(caminho.length() - 3, 3);
+        // pega a extensão dinamicamente procurando pelo ultimo ponto
+       size_t dotPos = caminho.find_last_of('.');
+       if(dotPos != std::string::npos) {
+        tipo = caminho.substr(dotPos + 1);
+       } else {
+        tipo = "txt"; // Fallback caso não ache ponto
+       }
         
         std::cout << "De uma descricao ao arquivo" << std::endl;
         std::getline(std::cin >> std::ws, descricao);
@@ -67,9 +73,13 @@ void correio(){
                 vmime::text(descricao)        
             );
             
-            
-            
-        anexo->getFileInfo().setFilename("placeholder.txt");     // Nome no e-mail
+        // Procura a ultima barra
+        size_t slashPos = caminho.find_last_of("/\\");
+
+        // Recorta apenas o que vem depois da ultima barra (nome real do arquivo)
+        std::string nomeRealDoArquivo = (slashPos != std::string::npos) ? caminho.substr(slashPos + 1) : "anexo_desconhecido." + tipo;    
+
+        anexo->getFileInfo().setFilename(nomeRealDoArquivo);     // Nome no e-mail
         email.attach(anexo);
         
       }
