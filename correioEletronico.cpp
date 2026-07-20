@@ -52,7 +52,7 @@ void correio(){
         std:: string caminho, tipo, descricao;
         
         std::cout << "Informe o caminho do arquivo (Formato: 'caminho ate a pasta'/'nome do arquivo.tipo')" << std::endl;
-        std::getline(std::cin >> std::ws, caminho)
+        std::getline(std::cin >> std::ws, caminho);
         //verificar se o caminho é  valido
         
         tipo = caminho.substr(caminho.length() - 3, 3);
