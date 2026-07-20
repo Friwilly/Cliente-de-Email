@@ -1,12 +1,11 @@
 #include <iostream>
 #include <vmime/vmime.hpp>
-#include <vmime/vmime.hpp>
 #include <memory>  // Para std::shared_ptr
 
 class SmartCertificateVerifier : public vmime::security::cert::certificateVerifier {
 public:
     // Assinatura EXATA que a classe base espera
-    void verify(std::shared_ptr<vmime::security::cert::certificateChain> chain, const vmime::string& hostname) override {
+    void verify(const std::shared_ptr<vmime::security::cert::certificateChain>& chain, const vmime::string& hostname) override {
         std::cout << "\n[!] === Verificacao de Seguranca TLS/SSL ===" << std::endl;
         std::cout << "[!] Conectando ao host: " << hostname << std::endl;
         std::cout << "[!] Cadeia de certificados recebida do servidor!" << std::endl;
@@ -25,23 +24,23 @@ void correio(){
     std::string endUsuario;
     std::cin >> endUsuario;
     //verificar se o endereço é  válido
-    email.setExpeditor(vmime::mailbox("endUsuario"));
+    email.setExpeditor(vmime::mailbox(endUsuario));
     
     std::cout << "Digite o endereço de envio" << std::endl;
     std::string endDestino;
     std::cin >> endDestino;
     vmime::addressList to;
-    to.appendAddress(vmime::make_shared<vmime::mailbox>("endDestino"));
+    to.appendAddress(vmime::make_shared<vmime::mailbox>(endDestino));
     email.setRecipients(to);
     
     std::cout << "Digite o assunto do e-mail" << std::endl;
     std::string assunto;
-    std::cin >> assunto;
+    std::getline(std::cin >> std::ws, assunto);
     email.setSubject(vmime::text(assunto));
     
     std::cout << "Digite o corpo do email" << std::endl;
     std::string corpo;
-    std::cin >> corpo;
+    std::getline(std::cin >> std::ws, corpo);
     email.getTextPart()->setText(vmime::make_shared<vmime::stringContentHandler>(corpo));
     
     while(true){
@@ -53,13 +52,14 @@ void correio(){
         std:: string caminho, tipo, descricao;
         
         std::cout << "Informe o caminho do arquivo (Formato: 'caminho ate a pasta'/'nome do arquivo.tipo')" << std::endl;
-        std::cin >> caminho;
+        std::getline(std::cin >> std::ws, caminho)
         //verificar se o caminho é  valido
         
         tipo = caminho.substr(caminho.length() - 3, 3);
         
         std::cout << "De uma descricao ao arquivo" << std::endl;
-        
+        std::getline(std::cin >> std::ws, descricao);
+
         vmime::shared_ptr<vmime::fileAttachment> anexo =
             vmime::make_shared<vmime::fileAttachment>(
                 caminho,                        
@@ -95,21 +95,38 @@ void correio(){
 
     // Fazer entrada dos dados de autenticação
     std::cout << "Gere uma nova ou utilize senha de app anterior: https://myaccount.google.com/apppasswords" << std::endl;
-    std::string senha;
-    std::cin >> senha;
+    std::string senhaEntrada;
+    std::getline(std::cin >> std::ws, senhaEntrada); // Le a linha inteira, mesmo com espaços
+
+    // Remove os espaços automaticamente para o usuario não errar
+    std::string senhaLimpa = "";
+    for(char c : senhaEntrada) {
+        if(c != ' ') senhaLimpa += c;
+    }
     
     transport->setProperty("options.need-authentication", true);
-    transport->setProperty("auth.username", endUsuario);
-    transport->setProperty("auth.password", senha);
+    // Usando .c_str() para converter std::string em const char*
+    transport->setProperty("auth.username", endUsuario.c_str());
+    transport->setProperty("auth.password", senhaLimpa.c_str()); // usar a senha sem espaços
     
     transport->setProperty("connection.tls", true);
     transport->setProperty("connection.tls.verify-certificate", true);
 
-    transport->connect();
-    transport->send(msg);
-    transport->disconnect();
-
-    std::cout << "E-mail enviado com sucesso!" << std::endl;
+    // colocar um try-catch para o programa não capotar se a senha estiver errada
+    try {
+        std::cout << "Conectando ao Gmail..." << std::endl;
+        transport->connect();
+        std::cout << "Enviando mensagem..." << std::endl;
+        transport->send(msg);
+        transport->disconnect();
+        std::cout << "\n[OK] Email enviado com sucesso" << std::endl;   
+    }
+    catch (vmime::exceptions::authentication_error& e) {
+        std::cerr << "\n[ERRO] Falha na autenticação! Verifique se seu email ou a senha estão corretos" << std::endl;
+    }
+    catch (vmime::exception& e) {
+        std::cerr << "\n[ERRO Vmime]: " << e.what() << std::endl;
+    }
     
 }
 
@@ -129,7 +146,10 @@ void menu(){
 
 int main()
 {
+    try {
     menu();
-
+    } catch (std::exception& e) {
+        std::cerr << "Erro inesperado: " << e.what() << std::endl;
+    }
     return 0;
 }
