@@ -94,9 +94,13 @@ void correio(){
     transport->setCertificateVerifier(vmime::make_shared<SmartCertificateVerifier>());
 
     // Fazer entrada dos dados de autenticação
+    std::cout << "Gere uma nova ou utilize senha de app anterior: https://myaccount.google.com/apppasswords" << std::endl;
+    std::string senha;
+    std::cin >> senha;
+    
     transport->setProperty("options.need-authentication", true);
-    transport->setProperty("auth.username", "felipe.rocoelho@gmail.com");
-    transport->setProperty("auth.password", "");
+    transport->setProperty("auth.username", endUsuario);
+    transport->setProperty("auth.password", senha);
     
     transport->setProperty("connection.tls", true);
     transport->setProperty("connection.tls.verify-certificate", true);
