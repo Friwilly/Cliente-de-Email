@@ -1,5 +1,9 @@
 #include <iostream>
+#include <string>
+#include <algorithm>
+#include <cctype>
 #include <vmime/vmime.hpp>
+#include <vmime/platforms/windows/windowsHandler.hpp>
 #include <memory>  // Para std::shared_ptr
 
 class SmartCertificateVerifier : public vmime::security::cert::certificateVerifier {
@@ -17,18 +21,36 @@ public:
     }
 };
 
+// Função auxiliar para mapear extensões para MIME Types válidos
+vmime::mediaType obterMediaType(const std::string& extensao) {
+    std::string ext = extensao;
+    std::transform(ext.begin(), ext.end(), ext.begin(), ::tolower);
+
+    if (ext == "png") return vmime::mediaType("image/png");
+    if (ext == "jpg" || ext == "jpeg") return vmime::mediaType("image/jpeg");
+    if (ext == "pdf") return vmime::mediaType("application/pdf");
+    if (ext == "txt") return vmime::mediaType("text/plain");
+    if (ext == "html") return vmime::mediaType("text/html");
+    if (ext == "zip") return vmime::mediaType("application/zip");
+
+    // Fallback padrão para arquivos binários genéricos
+    return vmime::mediaType("application/octet-stream");
+
+}
+
 void correio(){
     vmime::messageBuilder email;
     
-    std::cout << "Confirmado. Para prosseguir, digite o endereço de email de envio" << std::endl;
+    std::cout << "Confirmado. Para prosseguir, digite o endereço de email remetente" << std::endl;
     std::string endUsuario;
     std::cin >> endUsuario;
     //verificar se o endereço é  válido
     email.setExpeditor(vmime::mailbox(endUsuario));
     
-    std::cout << "Digite o endereço de envio" << std::endl;
+    std::cout << "Digite o endereço do destinatário" << std::endl;
     std::string endDestino;
     std::cin >> endDestino;
+
     vmime::addressList to;
     to.appendAddress(vmime::make_shared<vmime::mailbox>(endDestino));
     email.setRecipients(to);
@@ -46,10 +68,14 @@ void correio(){
     while(true){
       std::cout << "Caso queira anexar um arquivo, digite  1, caso contrário, digite 0" << std::endl;
       int valid;
-      std::cin >> valid;
+      if(!(std::cin >> valid)) {
+        std::cin.clear();
+        std::cin.ignore(10000, '\n');
+        continue;
+      }
       
       if(valid == 1){
-        std:: string caminho, tipo, descricao;
+        std:: string caminho, ext, descricao;
         
         std::cout << "Informe o caminho do arquivo (Formato: 'caminho ate a pasta'/'nome do arquivo.tipo')" << std::endl;
         std::getline(std::cin >> std::ws, caminho);
@@ -57,10 +83,10 @@ void correio(){
         
         // pega a extensão dinamicamente procurando pelo ultimo ponto
        size_t dotPos = caminho.find_last_of('.');
-       if(dotPos != std::string::npos) {
-        tipo = caminho.substr(dotPos + 1);
+       if(dotPos != std::string::npos && dotPos < caminho.length() - 1) {
+        ext = caminho.substr(dotPos + 1);
        } else {
-        tipo = "txt"; // Fallback caso não ache ponto
+        ext = "bin"; // Fallback caso não ache ponto
        }
         
         std::cout << "De uma descricao ao arquivo" << std::endl;
@@ -69,7 +95,7 @@ void correio(){
         vmime::shared_ptr<vmime::fileAttachment> anexo =
             vmime::make_shared<vmime::fileAttachment>(
                 caminho,                        
-                vmime::mediaType(tipo),          
+                obterMediaType(ext),          
                 vmime::text(descricao)        
             );
             
@@ -77,10 +103,11 @@ void correio(){
         size_t slashPos = caminho.find_last_of("/\\");
 
         // Recorta apenas o que vem depois da ultima barra (nome real do arquivo)
-        std::string nomeRealDoArquivo = (slashPos != std::string::npos) ? caminho.substr(slashPos + 1) : "anexo_desconhecido." + tipo;    
+        std::string nomeRealDoArquivo = (slashPos != std::string::npos) ? caminho.substr(slashPos + 1) : "anexo_desconhecido." + ext;    
 
         anexo->getFileInfo().setFilename(nomeRealDoArquivo);     // Nome no e-mail
         email.attach(anexo);
+        std::cout << "[+] Anexo adicionado: " << nomeRealDoArquivo << std::endl; 
         
       }
       else if(valid == 0){
@@ -141,23 +168,26 @@ void correio(){
 }
 
 void menu(){
-    std::cout << "Bem vindo ao correio de Illit\n";
-    std::cout << "Para prosseguir, digite 1, como numero de confirmacao\n";
+    std::cout << "Bem vindo ao correio de Illit" << std::endl;
+    std::cout << "[1] Criar e enviar E-mail" << std::endl;
+    std::cout << "[0] Sair" << std::endl;
+    std::cout << "Opção: ";
     int valid;
     std::cin >> valid;
     std::cout << std::endl;
     
     if(valid == 1){
         correio();
-    }
-    
+    }    
     std::cout << "Encerrando..." << std::endl;
 }
 
 int main()
 {
     try {
-    menu();
+        vmime::platform::setHandler<vmime::platforms::windows::windowsHandler>();
+        
+        menu();
     } catch (std::exception& e) {
         std::cerr << "Erro inesperado: " << e.what() << std::endl;
     }
