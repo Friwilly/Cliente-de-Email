@@ -4,6 +4,7 @@
 #include <QMessageBox> // Para mostrar janelas de alerta popups
 #include <QFileDialog> // Para abrir a janela de seleção
 #include <QFileInfo> // Para extrair o nome do arquivo
+#include <thread>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
@@ -50,35 +51,43 @@ void MainWindow::on_bntEnviar_clicked() {
     // O QTextEit (corpo do email) usa toPlainText().trimmed() em vez de text().trimmed()
     std::string corpo = ui->txtCorpo->toPlainText().trimmed().toStdString();
 
-    // 2. Validação simples
     if(remetente.empty() || senha.empty() || destinatario.empty()) {
         QMessageBox::warning(this, "Erro", "Preencha remetente, senha e destinatario!");
         return;
     }
 
-    // 3. tenta enviar o email
-    try {
-        ui->bntEnviar->setEnabled(false); // Desativa o botão temporariamente
-        ui->bntEnviar->setText("Enviando...");
+    ui->bntEnviar->setEnabled(false);
+    ui->bntEnviar->setText("Enviando...");
 
-        // Converte a lista do Qt para lista do C++
-        std::vector<std::string> listaAnexosCpf;
-        for(const QString& caminho : caminhosAnexos) {
-            listaAnexosCpf.push_back(caminho.toStdString());
-        }
-
-        if(EnviadorEmail::enviar(remetente, senha, destinatario, assunto, corpo, listaAnexosCpf)) {
-            QMessageBox::information(this, "Sucesso", "Email enviado com sucesso!");
-            
-            // Limpa o anexo após o envio
-            caminhosAnexos.clear();
-            ui->label_anexo->setText("Nenhum arquivo");
-        }
-    } catch (const std::string& erro) {
-        QMessageBox::critical(this, "Erro de Envio", QString::fromStdString("Falha: " + erro));
+    std::vector<std::string> listaAnexos;
+    for(const QString& caminho : caminhosAnexos) {
+        listaAnexos.push_back(caminho.toStdString());
     }
 
-    // Restaura o botão
-    ui->bntEnviar->setEnabled(true);
-    ui->bntEnviar->setText("Enviar");
+    std::thread([=]() {
+        try {
+            //essa função vai rodar em paralelo;
+            if(EnviadorEmail::enviar(remetente, senha, destinatario, assunto, corpo, listaAnexos)) {
+                // O Qt proíbe alterar a tela de dentro de uma thread
+                // O invokeMethod devolve o controle para a janela principal
+                QMetaObject::invokeMethod(this, [=]()  {
+                    QMessageBox::information(this, "Sucesso", "Email enviado com sucesso!");
+
+                    caminhosAnexos.clear();
+                    ui->label_anexo->setText("Nenhum arquivo");
+
+                    ui->bntEnviar->setEnabled(true);
+                    ui->bntEnviar->setText("Enviar");
+                });        
+            }
+        } catch (const std::string& erro) {
+            //Em caso de erro tambem devolvemos o controle para a tela principal
+            QMetaObject::invokeMethod(this, [=]() {
+                QMessageBox::critical(this, "Erro de envio", QString::fromStdString("Falha: " + erro));
+
+                ui->bntEnviar->setEnabled(true);
+                ui->bntEnviar->setText("Enviar");
+            });
+        }
+    }).detach(); // O .detach() avisa o sistema para deixar a Thread rodar livremente até acabar  
 }

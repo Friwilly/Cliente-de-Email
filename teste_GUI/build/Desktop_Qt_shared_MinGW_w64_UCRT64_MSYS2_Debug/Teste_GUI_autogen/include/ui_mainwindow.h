@@ -11,6 +11,8 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -18,6 +20,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTextEdit>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -26,20 +29,26 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QLabel *label_corpo;
-    QLabel *label_senha;
-    QLabel *label_destinatario;
-    QLabel *label_remetente;
-    QLabel *label_assunto;
-    QLineEdit *txtAssunto;
-    QLineEdit *txtDestinatario;
-    QLineEdit *txtSenha;
-    QLineEdit *txtRemetente;
-    QTextEdit *txtCorpo;
-    QPushButton *bntEnviar;
     QLabel *label_titulo;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout_2;
+    QHBoxLayout *horizontalLayout;
     QPushButton *bntAnexo;
+    QPushButton *bntEnviar;
     QLabel *label_anexo;
+    QWidget *widget1;
+    QVBoxLayout *verticalLayout_3;
+    QGridLayout *gridLayout;
+    QLabel *label_remetente;
+    QLabel *label_senha;
+    QLineEdit *txtRemetente;
+    QLineEdit *txtSenha;
+    QLabel *label_destinatario;
+    QLabel *label_assunto;
+    QLineEdit *txtDestinatario;
+    QLineEdit *txtAssunto;
+    QLabel *label_corpo;
+    QTextEdit *txtCorpo;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -50,49 +59,97 @@ public:
         MainWindow->resize(600, 450);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        label_corpo = new QLabel(centralwidget);
-        label_corpo->setObjectName("label_corpo");
-        label_corpo->setGeometry(QRect(260, 150, 81, 20));
-        label_senha = new QLabel(centralwidget);
-        label_senha->setObjectName("label_senha");
-        label_senha->setGeometry(QRect(320, 30, 101, 20));
-        label_destinatario = new QLabel(centralwidget);
-        label_destinatario->setObjectName("label_destinatario");
-        label_destinatario->setGeometry(QRect(20, 90, 63, 20));
-        label_remetente = new QLabel(centralwidget);
-        label_remetente->setObjectName("label_remetente");
-        label_remetente->setGeometry(QRect(20, 30, 81, 20));
-        label_assunto = new QLabel(centralwidget);
-        label_assunto->setObjectName("label_assunto");
-        label_assunto->setGeometry(QRect(320, 90, 63, 20));
-        txtAssunto = new QLineEdit(centralwidget);
-        txtAssunto->setObjectName("txtAssunto");
-        txtAssunto->setGeometry(QRect(320, 110, 251, 31));
-        txtDestinatario = new QLineEdit(centralwidget);
-        txtDestinatario->setObjectName("txtDestinatario");
-        txtDestinatario->setGeometry(QRect(20, 110, 251, 31));
-        txtSenha = new QLineEdit(centralwidget);
-        txtSenha->setObjectName("txtSenha");
-        txtSenha->setGeometry(QRect(320, 50, 251, 31));
-        txtSenha->setEchoMode(QLineEdit::Normal);
-        txtRemetente = new QLineEdit(centralwidget);
-        txtRemetente->setObjectName("txtRemetente");
-        txtRemetente->setGeometry(QRect(20, 50, 251, 31));
-        txtCorpo = new QTextEdit(centralwidget);
-        txtCorpo->setObjectName("txtCorpo");
-        txtCorpo->setGeometry(QRect(40, 170, 501, 75));
-        bntEnviar = new QPushButton(centralwidget);
-        bntEnviar->setObjectName("bntEnviar");
-        bntEnviar->setGeometry(QRect(300, 260, 231, 81));
         label_titulo = new QLabel(centralwidget);
         label_titulo->setObjectName("label_titulo");
         label_titulo->setGeometry(QRect(250, 0, 101, 20));
-        bntAnexo = new QPushButton(centralwidget);
+        widget = new QWidget(centralwidget);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(40, 270, 501, 71));
+        verticalLayout_2 = new QVBoxLayout(widget);
+        verticalLayout_2->setObjectName("verticalLayout_2");
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName("horizontalLayout");
+        bntAnexo = new QPushButton(widget);
         bntAnexo->setObjectName("bntAnexo");
-        bntAnexo->setGeometry(QRect(40, 260, 191, 29));
-        label_anexo = new QLabel(centralwidget);
+
+        horizontalLayout->addWidget(bntAnexo);
+
+        bntEnviar = new QPushButton(widget);
+        bntEnviar->setObjectName("bntEnviar");
+
+        horizontalLayout->addWidget(bntEnviar);
+
+
+        verticalLayout_2->addLayout(horizontalLayout);
+
+        label_anexo = new QLabel(widget);
         label_anexo->setObjectName("label_anexo");
-        label_anexo->setGeometry(QRect(40, 290, 191, 20));
+
+        verticalLayout_2->addWidget(label_anexo);
+
+        widget1 = new QWidget(centralwidget);
+        widget1->setObjectName("widget1");
+        widget1->setGeometry(QRect(20, 30, 551, 221));
+        verticalLayout_3 = new QVBoxLayout(widget1);
+        verticalLayout_3->setObjectName("verticalLayout_3");
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+        gridLayout = new QGridLayout();
+        gridLayout->setObjectName("gridLayout");
+        label_remetente = new QLabel(widget1);
+        label_remetente->setObjectName("label_remetente");
+
+        gridLayout->addWidget(label_remetente, 0, 0, 1, 1);
+
+        label_senha = new QLabel(widget1);
+        label_senha->setObjectName("label_senha");
+
+        gridLayout->addWidget(label_senha, 0, 1, 1, 1);
+
+        txtRemetente = new QLineEdit(widget1);
+        txtRemetente->setObjectName("txtRemetente");
+
+        gridLayout->addWidget(txtRemetente, 1, 0, 1, 1);
+
+        txtSenha = new QLineEdit(widget1);
+        txtSenha->setObjectName("txtSenha");
+        txtSenha->setEchoMode(QLineEdit::Normal);
+
+        gridLayout->addWidget(txtSenha, 1, 1, 1, 1);
+
+        label_destinatario = new QLabel(widget1);
+        label_destinatario->setObjectName("label_destinatario");
+
+        gridLayout->addWidget(label_destinatario, 2, 0, 1, 1);
+
+        label_assunto = new QLabel(widget1);
+        label_assunto->setObjectName("label_assunto");
+
+        gridLayout->addWidget(label_assunto, 2, 1, 1, 1);
+
+        txtDestinatario = new QLineEdit(widget1);
+        txtDestinatario->setObjectName("txtDestinatario");
+
+        gridLayout->addWidget(txtDestinatario, 3, 0, 1, 1);
+
+        txtAssunto = new QLineEdit(widget1);
+        txtAssunto->setObjectName("txtAssunto");
+
+        gridLayout->addWidget(txtAssunto, 3, 1, 1, 1);
+
+
+        verticalLayout_3->addLayout(gridLayout);
+
+        label_corpo = new QLabel(widget1);
+        label_corpo->setObjectName("label_corpo");
+
+        verticalLayout_3->addWidget(label_corpo);
+
+        txtCorpo = new QTextEdit(widget1);
+        txtCorpo->setObjectName("txtCorpo");
+
+        verticalLayout_3->addWidget(txtCorpo);
+
         MainWindow->setCentralWidget(centralwidget);
         txtCorpo->raise();
         txtAssunto->raise();
@@ -124,15 +181,15 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Correio Illit", nullptr));
-        label_corpo->setText(QCoreApplication::translate("MainWindow", "Mensagem:", nullptr));
-        label_senha->setText(QCoreApplication::translate("MainWindow", "Senha de App:", nullptr));
-        label_destinatario->setText(QCoreApplication::translate("MainWindow", "Para:", nullptr));
-        label_remetente->setText(QCoreApplication::translate("MainWindow", "Seu e-mail:", nullptr));
-        label_assunto->setText(QCoreApplication::translate("MainWindow", "Assunto:", nullptr));
-        bntEnviar->setText(QCoreApplication::translate("MainWindow", "Enviar e-mail", nullptr));
         label_titulo->setText(QCoreApplication::translate("MainWindow", "CORREIO ILLIT", nullptr));
         bntAnexo->setText(QCoreApplication::translate("MainWindow", "Anexar arquivo", nullptr));
+        bntEnviar->setText(QCoreApplication::translate("MainWindow", "Enviar e-mail", nullptr));
         label_anexo->setText(QCoreApplication::translate("MainWindow", "Nenhum arquivo", nullptr));
+        label_remetente->setText(QCoreApplication::translate("MainWindow", "Seu e-mail:", nullptr));
+        label_senha->setText(QCoreApplication::translate("MainWindow", "Senha de App:", nullptr));
+        label_destinatario->setText(QCoreApplication::translate("MainWindow", "Para:", nullptr));
+        label_assunto->setText(QCoreApplication::translate("MainWindow", "Assunto:", nullptr));
+        label_corpo->setText(QCoreApplication::translate("MainWindow", "Mensagem:", nullptr));
     } // retranslateUi
 
 };

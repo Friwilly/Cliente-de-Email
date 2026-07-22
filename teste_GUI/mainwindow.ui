@@ -14,137 +14,6 @@
    <string>Correio Illit</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_corpo">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>150</y>
-      <width>81</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Mensagem:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_senha">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>30</y>
-      <width>101</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Senha de App:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_destinatario">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>90</y>
-      <width>63</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Para:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_remetente">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>81</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Seu e-mail:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_assunto">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>90</y>
-      <width>63</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Assunto:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txtAssunto">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>110</y>
-      <width>251</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txtDestinatario">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>110</y>
-      <width>251</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txtSenha">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>50</y>
-      <width>251</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="echoMode">
-     <enum>QLineEdit::Normal</enum>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txtRemetente">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>50</y>
-      <width>251</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="txtCorpo">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>170</y>
-      <width>501</width>
-      <height>75</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="bntEnviar">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>260</y>
-      <width>231</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Enviar e-mail</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_titulo">
     <property name="geometry">
      <rect>
@@ -158,31 +27,112 @@
      <string>CORREIO ILLIT</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="bntAnexo">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>260</y>
-      <width>191</width>
-      <height>29</height>
+      <y>270</y>
+      <width>501</width>
+      <height>71</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Anexar arquivo</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="bntAnexo">
+         <property name="text">
+          <string>Anexar arquivo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bntEnviar">
+         <property name="text">
+          <string>Enviar e-mail</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_anexo">
+       <property name="text">
+        <string>Nenhum arquivo</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QLabel" name="label_anexo">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>290</y>
-      <width>191</width>
-      <height>20</height>
+      <x>20</x>
+      <y>30</y>
+      <width>551</width>
+      <height>221</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Nenhum arquivo</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_remetente">
+         <property name="text">
+          <string>Seu e-mail:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_senha">
+         <property name="text">
+          <string>Senha de App:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="txtRemetente"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="txtSenha">
+         <property name="echoMode">
+          <enum>QLineEdit::Normal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_destinatario">
+         <property name="text">
+          <string>Para:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_assunto">
+         <property name="text">
+          <string>Assunto:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLineEdit" name="txtDestinatario"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="txtAssunto"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_corpo">
+       <property name="text">
+        <string>Mensagem:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="txtCorpo"/>
+     </item>
+    </layout>
    </widget>
    <zorder>txtCorpo</zorder>
    <zorder>txtAssunto</zorder>
