@@ -92,7 +92,7 @@ public:
         bntAnexo->setGeometry(QRect(40, 260, 191, 29));
         label_anexo = new QLabel(centralwidget);
         label_anexo->setObjectName("label_anexo");
-        label_anexo->setGeometry(QRect(40, 290, 121, 20));
+        label_anexo->setGeometry(QRect(40, 290, 191, 20));
         MainWindow->setCentralWidget(centralwidget);
         txtCorpo->raise();
         txtAssunto->raise();

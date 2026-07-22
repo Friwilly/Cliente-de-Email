@@ -24,8 +24,18 @@ void MainWindow::on_bntAnexo_clicked() {
     if(!arquivosSelecionados.isEmpty()) {
         caminhosAnexos = arquivosSelecionados;
 
-        // Atualiza o label para mostrar a quantidade de arquivos escolhidos
-        ui->label_anexo->setText(QString::number(caminhosAnexos.size()) + " arquivo(s) anexado(s)");
+        // Criar uma lista apenas com os nomes dos arquivos
+        QStringList nomesArquivos;
+        for(const QString& caminho : caminhosAnexos) {
+            QFileInfo info(caminho);
+            nomesArquivos.append(info.fileName());
+        }
+
+        QString textoParaLabel = "Anexos: " + nomesArquivos.join(", ");
+        //ativa a quebra de linha automatica
+        ui->label_anexo->setWordWrap(true);
+        ui->label_anexo->setText(textoParaLabel);
+        ui->label_anexo->adjustSize();
     }
    
 }
