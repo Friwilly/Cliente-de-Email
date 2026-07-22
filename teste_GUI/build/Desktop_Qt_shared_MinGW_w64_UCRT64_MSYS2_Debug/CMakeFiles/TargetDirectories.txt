@@ -1,0 +1,5 @@
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/teste_GUI/build/Desktop_Qt_shared_MinGW_w64_UCRT64_MSYS2_Debug/CMakeFiles/Teste_GUI.dir
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/teste_GUI/build/Desktop_Qt_shared_MinGW_w64_UCRT64_MSYS2_Debug/CMakeFiles/edit_cache.dir
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/teste_GUI/build/Desktop_Qt_shared_MinGW_w64_UCRT64_MSYS2_Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/teste_GUI/build/Desktop_Qt_shared_MinGW_w64_UCRT64_MSYS2_Debug/CMakeFiles/Teste_GUI_autogen_timestamp_deps.dir
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/teste_GUI/build/Desktop_Qt_shared_MinGW_w64_UCRT64_MSYS2_Debug/CMakeFiles/Teste_GUI_autogen.dir
