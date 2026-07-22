@@ -30,11 +30,18 @@ public:
         // LEMBRAR DE POR A LOGICA DO ANEXO AQUI DPS DO PRIMEIRO TESTE
         for (const std::string& caminho : Anexos) {
             if(!caminho.empty()) {
+                // extrai apenas o nome e extensão
+                size_t pos = caminho.find_last_of("/\\");
+                std::string nomeArquivo = (pos != std::string::npos) ? caminho.substr(pos + 1) : caminho;
+
+                // 2. Cria o anexo usanto o tipo generico, mas com o nome real
                 vmime::shared_ptr<vmime::fileAttachment> anexo = vmime::make_shared<vmime::fileAttachment>(
                     caminho,
                     vmime::mediaType("application/octet-stream"),
-                    vmime::text("Anexo")
+                    vmime::text(nomeArquivo)
                 );
+
+                anexo->getFileInfo().setFilename(nomeArquivo);
                 email.appendAttachment(anexo);
             }
         }
