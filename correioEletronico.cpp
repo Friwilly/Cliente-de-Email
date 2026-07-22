@@ -4,12 +4,11 @@
 #include <cctype>
 #include <vmime/vmime.hpp>
 #include <vmime/platforms/windows/windowsHandler.hpp>
-#include <memory>  // Para std::shared_ptr
 
 class SmartCertificateVerifier : public vmime::security::cert::certificateVerifier {
 public:
     // Assinatura EXATA que a classe base espera
-    void verify(const std::shared_ptr<vmime::security::cert::certificateChain>& chain, const vmime::string& hostname) override {
+    void verify(const vmime::shared_ptr<vmime::security::cert::certificateChain>& chain, const vmime::string& hostname) override {
         std::cout << "\n[!] === Verificacao de Seguranca TLS/SSL ===" << std::endl;
         std::cout << "[!] Conectando ao host: " << hostname << std::endl;
         std::cout << "[!] Cadeia de certificados recebida do servidor!" << std::endl;
@@ -168,19 +167,28 @@ void correio(){
 }
 
 void menu(){
-    std::cout << "Bem vindo ao correio de Illit" << std::endl;
-    std::cout << "[1] Criar e enviar E-mail" << std::endl;
-    std::cout << "[0] Sair" << std::endl;
-    std::cout << "Opção: ";
-    int valid;
-    std::cin >> valid;
-    std::cout << std::endl;
+    while(true) {
+        std::cout << "Bem vindo ao correio de Illit" << std::endl;
+        std::cout << "[1] Criar e enviar E-mail" << std::endl;
+        std::cout << "[0] Sair" << std::endl;
+        std::cout << "Opção: ";
+        int valid;
+        if(!(std::cin >> valid)) {
+            std::cin.clear();
+            std::cin.ignore(10000, '\n');
+            continue;
+        }
+        std::cout << std::endl;
     
-    if(valid == 1){
-        correio();
-    }    
-    std::cout << "Encerrando..." << std::endl;
-}
+        if(valid == 1){
+            correio();
+        } else if(valid == 0) {    
+            std::cout << "Encerrando..." << std::endl;
+        } else {
+            std::cout << "Opção inválida!" << std::endl;
+        }
+    }
+}       
 
 int main()
 {
