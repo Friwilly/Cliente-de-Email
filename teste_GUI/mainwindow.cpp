@@ -21,24 +21,44 @@ void MainWindow::on_bntAnexo_clicked() {
     // Usamos getOpenFileNames para permitir seleção múltipla
     QStringList arquivosSelecionados = QFileDialog::getOpenFileNames(this, "Selecionar Anexos", "", "Todos os arquivos (*.*)");
 
-    // Se o usuário selecionou arquivos, subtituímos a lista atual
     if(!arquivosSelecionados.isEmpty()) {
         caminhosAnexos = arquivosSelecionados;
-
-        // Criar uma lista apenas com os nomes dos arquivos
-        QStringList nomesArquivos;
-        for(const QString& caminho : caminhosAnexos) {
-            QFileInfo info(caminho);
-            nomesArquivos.append(info.fileName());
-        }
-
-        QString textoParaLabel = "Anexos: " + nomesArquivos.join(", ");
-        //ativa a quebra de linha automatica
-        ui->label_anexo->setWordWrap(true);
-        ui->label_anexo->setText(textoParaLabel);
-        ui->label_anexo->adjustSize();
     }
-   
+
+    if(caminhosAnexos.isEmpty()) return;
+
+    //extrair apenas os nomes dos arquivos e adicionar um marcador (.)
+    QStringList nomesArquivos;
+    for(const QString& caminho : caminhosAnexos) {
+        QFileInfo info(caminho);
+        nomesArquivos.append(". " + info.fileName());
+    }
+
+    // Juntar os nomes usando QUEBRA DE LINHA em vez de virgula
+    QString textoParaLabel = "Anexos (" + QString::number(caminhosAnexos.size()) + "):\n" + nomesArquivos.join("\n");
+
+    ui->label_anexo->setWordWrap(true);
+    ui->label_anexo->setText(textoParaLabel);
+    ui->label_anexo->adjustSize(); // Recalcular o tamanho exato do label
+
+    // Redimensiona o container pai que engloba o label e os botões
+   QWidget* containerPai = ui->label_anexo->parentWidget();
+   if(containerPai && containerPai != ui->centralwidget) {
+        containerPai->adjustSize();
+   }
+
+   // Pegar a posição y real do container inteiro na janela
+   int yContainer = containerPai ? containerPai->mapTo(this, QPoint(0,0)).y() : ui->label_anexo->mapTo(this, QPoint(0,0)).y();
+   int alturaContainer = containerPai ? containerPai->height() : ui->label_anexo->height();
+
+   int limiteInferior = yContainer + alturaContainer;
+   int margemSeguranca = 30;
+
+   int AlturaNecessaria = limiteInferior + margemSeguranca;
+
+   if(AlturaNecessaria > this->height()) {
+    this->resize(this->width(), AlturaNecessaria);
+   }
 }
 
 void MainWindow::on_bntEnviar_clicked() {
