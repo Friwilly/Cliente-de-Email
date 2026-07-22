@@ -21,6 +21,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QString caminhoAnexo; //variavel para armazenar o endereço do arquivo
+    QStringList caminhosAnexos; // lista de caminhos de arquivos 
 };
 #endif 

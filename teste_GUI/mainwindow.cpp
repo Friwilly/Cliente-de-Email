@@ -17,14 +17,17 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::on_bntAnexo_clicked() {
-    // Abre a janela para o usuário escolher o arquivo
-    caminhoAnexo = QFileDialog::getOpenFileName(this, "Selecionar Anexo", "", "Todos os Arquivos (*.*)");
+    // Usamos getOpenFileNames para permitir seleção múltipla
+    QStringList arquivosSelecionados = QFileDialog::getOpenFileNames(this, "Selecionar Anexos", "", "Todos os arquivos (*.*)");
 
-    // Se o usuário selecionou algo, mostramos o nome no label
-    if(!caminhoAnexo.isEmpty()) {
-        QFileInfo info(caminhoAnexo);
-        ui->label_anexo->setText("Anexo: " + info.fileName());
+    // Se o usuário selecionou arquivos, subtituímos a lista atual
+    if(!arquivosSelecionados.isEmpty()) {
+        caminhosAnexos = arquivosSelecionados;
+
+        // Atualiza o label para mostrar a quantidade de arquivos escolhidos
+        ui->label_anexo->setText(QString::number(caminhosAnexos.size()) + " arquivo(s) anexado(s)");
     }
+   
 }
 
 void MainWindow::on_bntEnviar_clicked() {
@@ -48,12 +51,17 @@ void MainWindow::on_bntEnviar_clicked() {
         ui->bntEnviar->setEnabled(false); // Desativa o botão temporariamente
         ui->bntEnviar->setText("Enviando...");
 
-        // Passamos o caminho do anexo para o EnviadorEmail
-        if(EnviadorEmail::enviar(remetente, senha, destinatario, assunto, corpo, caminhoAnexo.toStdString())) {
+        // Converte a lista do Qt para lista do C++
+        std::vector<std::string> listaAnexosCpf;
+        for(const QString& caminho : caminhosAnexos) {
+            listaAnexosCpf.push_back(caminho.toStdString());
+        }
+
+        if(EnviadorEmail::enviar(remetente, senha, destinatario, assunto, corpo, listaAnexosCpf)) {
             QMessageBox::information(this, "Sucesso", "Email enviado com sucesso!");
             
             // Limpa o anexo após o envio
-            caminhoAnexo = "";
+            caminhosAnexos.clear();
             ui->label_anexo->setText("Nenhum arquivo");
         }
     } catch (const std::string& erro) {

@@ -15,7 +15,7 @@ public:
 class EnviadorEmail {
 public:
     //retorna true se enviou ou lança uma string com erro
-    static bool enviar(const std::string& remetente, const std::string& senha, const std::string& destinatario, const std::string& assunto, const std::string& corpo, const std::string& caminhoAnexo) 
+    static bool enviar(const std::string& remetente, const std::string& senha, const std::string& destinatario, const std::string& assunto, const std::string& corpo, const std::vector<std::string>& Anexos) 
     {
         vmime::messageBuilder email;
         email.setExpeditor(vmime::mailbox(remetente));
@@ -28,13 +28,15 @@ public:
         email.getTextPart()->setText(vmime::make_shared<vmime::stringContentHandler>(corpo));
 
         // LEMBRAR DE POR A LOGICA DO ANEXO AQUI DPS DO PRIMEIRO TESTE
-        if(!caminhoAnexo.empty()) {
-            vmime::shared_ptr<vmime::fileAttachment> anexo = vmime::make_shared<vmime::fileAttachment>(
-                caminhoAnexo,
-                vmime::mediaType("application/octet-stream"), // Define como arquivo genérico
-                vmime::text("Anexo")
-            );
-            email.appendAttachment(anexo);
+        for (const std::string& caminho : Anexos) {
+            if(!caminho.empty()) {
+                vmime::shared_ptr<vmime::fileAttachment> anexo = vmime::make_shared<vmime::fileAttachment>(
+                    caminho,
+                    vmime::mediaType("application/octet-stream"),
+                    vmime::text("Anexo")
+                );
+                email.appendAttachment(anexo);
+            }
         }
 
         vmime::shared_ptr<vmime::message> msg = email.construct();
