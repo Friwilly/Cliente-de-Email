@@ -48,13 +48,28 @@ public:
 
         vmime::shared_ptr<vmime::message> msg = email.construct();
         vmime::shared_ptr<vmime::net::session> sess = vmime::net::session::create();
-        vmime::shared_ptr<vmime::net::transport> transport = sess->getTransport(vmime::utility::url("smtp://smtp.gmail.com:587"));
+        // Nova logica de identificar o servidor smtp
+        std::string smtpUrl = "smtp://smtp.gmail.com:587"; // Padrão
+
+        // Converter o remetente para minúsculas para facilitar a busca
+        std::string remetenteLower = remetente;
+        for(auto& c : remetenteLower) c = tolower(c);
+
+        if(remetenteLower.find("@outlook.com") != std::string::npos ||
+            remetenteLower.find("@hotmail.com") != std::string::npos) {
+            smtpUrl = "smtp://smtp-mail.outlook.com:587";
+        } else if (remetenteLower.find("@yahoo.com") != std::string::npos ||
+                    remetenteLower.find("@yahoo.com.br") != std::string::npos) {
+            smtpUrl = "smtp://smtp.mail.yahoo.com:587";
+        } else if (remetenteLower.find("@office365.com") != std::string::npos) {
+            smtpUrl = "smtp://smtp.office365.com:587";
+        }
+        vmime::shared_ptr<vmime::net::transport> transport = sess->getTransport(vmime::utility::url(smtpUrl));
 
         transport->setCertificateVerifier(vmime::make_shared<SmartCertificateVerifier>());
         transport->setProperty("options.need-authentication", true);
         transport->setProperty("auth.username", remetente.c_str());
         transport->setProperty("auth.password", senha.c_str());
-        //transport->setProperty("connection.tls", true);
         transport->setProperty("connection.tls", true);
         transport->setProperty("connection.tls.verify-certificate", true);
 
