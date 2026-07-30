@@ -393,6 +393,7 @@ CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj: \
  C:/msys64/ucrt64/include/qt6/QtGui/qcursor.h \
  C:/msys64/ucrt64/include/qt6/QtGui/qbitmap.h \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qtabwidget.h \
+ C:/msys64/ucrt64/include/qt6/QtCore/QPoint \
  C:/msys64/ucrt64/include/qt6/QtCore/qtmochelpers.h \
  C:/msys64/ucrt64/include/qt6/QtCore/qtmocconstants.h \
  C:/msys64/ucrt64/include/qt6/QtCore/q20algorithm.h

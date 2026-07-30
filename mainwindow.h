@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QPoint> // para lidar com a posição do mouse
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -18,6 +19,8 @@ private slots:
     // Slot que responderá ao clique do botão
     void on_bntEnviar_clicked();
     void on_bntAnexo_clicked();
+    void mostrarMenuContextoLista(const QPoint &pos);
+    void removerAnexo();
 
 private:
     Ui::MainWindow *ui;

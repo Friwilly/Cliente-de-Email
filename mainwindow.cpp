@@ -4,6 +4,8 @@
 #include <QMessageBox> // Para mostrar janelas de alerta popups
 #include <QFileDialog> // Para abrir a janela de seleção
 #include <QFileInfo> // Para extrair o nome do arquivo
+#include <QMenu>
+#include <QAction>
 #include <thread>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
@@ -11,6 +13,12 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
     // Inicializa o handler do Vmime para Windows uma unica vez ao abrir o app
     vmime::platform::setHandler<vmime::platforms::windows::windowsHandler>();
+
+    // configura a lista para aceitar menu de contexto customizado
+    ui->lista_anexos->setContextMenuPolicy(Qt::CustomContextMenu);
+
+    // Conecta o evento de clique direito à nossa função
+    connect(ui->lista_anexos, &QListWidget::customContextMenuRequested, this, &MainWindow::mostrarMenuContextoLista);
 }
 
 MainWindow::~MainWindow() {
@@ -27,38 +35,14 @@ void MainWindow::on_bntAnexo_clicked() {
 
     if(caminhosAnexos.isEmpty()) return;
 
-    //extrair apenas os nomes dos arquivos e adicionar um marcador (.)
-    QStringList nomesArquivos;
+    // Limpa a lista visual antes de preencher
+    ui->lista_anexos->clear();
+
+    // Extrair apenas os nomes dos arquivos e adicionar
     for(const QString& caminho : caminhosAnexos) {
         QFileInfo info(caminho);
-        nomesArquivos.append(". " + info.fileName());
+        ui->lista_anexos->addItem(info.fileName());
     }
-
-    // Juntar os nomes usando QUEBRA DE LINHA em vez de virgula
-    QString textoParaLabel = "Anexos (" + QString::number(caminhosAnexos.size()) + "):\n" + nomesArquivos.join("\n");
-
-    ui->label_anexo->setWordWrap(true);
-    ui->label_anexo->setText(textoParaLabel);
-    ui->label_anexo->adjustSize(); // Recalcular o tamanho exato do label
-
-    // Redimensiona o container pai que engloba o label e os botões
-   QWidget* containerPai = ui->label_anexo->parentWidget();
-   if(containerPai && containerPai != ui->centralwidget) {
-        containerPai->adjustSize();
-   }
-
-   // Pegar a posição y real do container inteiro na janela
-   int yContainer = containerPai ? containerPai->mapTo(this, QPoint(0,0)).y() : ui->label_anexo->mapTo(this, QPoint(0,0)).y();
-   int alturaContainer = containerPai ? containerPai->height() : ui->label_anexo->height();
-
-   int limiteInferior = yContainer + alturaContainer;
-   int margemSeguranca = 30;
-
-   int AlturaNecessaria = limiteInferior + margemSeguranca;
-
-   if(AlturaNecessaria > this->height()) {
-    this->resize(this->width(), AlturaNecessaria);
-   }
 }
 
 void MainWindow::on_bntEnviar_clicked() {
@@ -94,7 +78,7 @@ void MainWindow::on_bntEnviar_clicked() {
                     QMessageBox::information(this, "Sucesso", "Email enviado com sucesso!");
 
                     caminhosAnexos.clear();
-                    ui->label_anexo->setText("Nenhum arquivo");
+                    ui->lista_anexos->clear(); // esvaziar a lista de anexos atual
 
                     ui->bntEnviar->setEnabled(true);
                     ui->bntEnviar->setText("Enviar");
@@ -110,4 +94,33 @@ void MainWindow::on_bntEnviar_clicked() {
             });
         }
     }).detach(); // O .detach() avisa o sistema para deixar a Thread rodar livremente até acabar  
+}
+
+// função de criar e exibir o menu quando o usuario clicar com o botão direito
+void MainWindow::mostrarMenuContextoLista(const QPoint &pos) {
+    // Verifica se o clique foi em cima de um item válido e não no espaço vazio
+    QListWidgetItem *item = ui->lista_anexos->itemAt(pos);
+    if(!item) return;
+
+    // Cria o menu
+    QMenu menu(this);
+    QAction *acaoRemover = menu.addAction("Remover");
+
+    // conecta a opção "Remover" a nossa função de remoção
+    connect(acaoRemover, &QAction::triggered, this, &MainWindow::removerAnexo);
+
+    //Exibe o menu na exata posição do mouse na tela
+    menu.exec(ui->lista_anexos->mapToGlobal(pos));
+}
+
+// esta função efetivamente deleta o anexo
+void MainWindow::removerAnexo() {
+    int linhaSelecionada = ui->lista_anexos->currentRow();
+
+    if(linhaSelecionada >= 0) {
+        // remove visualmente da lista
+        delete ui->lista_anexos->takeItem(linhaSelecionada);
+        //remove o caminho corresbondete da variavel
+        caminhosAnexos.removeAt(linhaSelecionada);
+    }
 }

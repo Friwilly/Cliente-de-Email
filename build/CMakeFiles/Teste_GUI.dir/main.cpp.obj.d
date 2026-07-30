@@ -392,6 +392,7 @@ CMakeFiles/Teste_GUI.dir/main.cpp.obj: \
  C:/msys64/ucrt64/include/qt6/QtGui/qcursor.h \
  C:/msys64/ucrt64/include/qt6/QtGui/qbitmap.h \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qtabwidget.h \
+ C:/msys64/ucrt64/include/qt6/QtCore/QPoint \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QApplication \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qapplication.h \
  C:/msys64/ucrt64/include/qt6/QtCore/qcoreapplication.h \

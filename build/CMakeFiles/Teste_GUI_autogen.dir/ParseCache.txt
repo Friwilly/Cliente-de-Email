@@ -209,6 +209,7 @@ C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.
  mdp:C:/msys64/ucrt64/include/pthread_signal.h
  mdp:C:/msys64/ucrt64/include/pthread_time.h
  mdp:C:/msys64/ucrt64/include/pthread_unistd.h
+ mdp:C:/msys64/ucrt64/include/qt6/QtCore/QPoint
  mdp:C:/msys64/ucrt64/include/qt6/QtCore/q17memory.h
  mdp:C:/msys64/ucrt64/include/qt6/QtCore/q20bit.h
  mdp:C:/msys64/ucrt64/include/qt6/QtCore/q20functional.h

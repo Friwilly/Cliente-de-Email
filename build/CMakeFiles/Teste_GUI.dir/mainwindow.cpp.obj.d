@@ -392,6 +392,7 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: \
  C:/msys64/ucrt64/include/qt6/QtGui/qcursor.h \
  C:/msys64/ucrt64/include/qt6/QtGui/qbitmap.h \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qtabwidget.h \
+ C:/msys64/ucrt64/include/qt6/QtCore/QPoint \
  C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/Teste_GUI_autogen/include/ui_mainwindow.h \
  C:/msys64/ucrt64/include/qt6/QtCore/QVariant \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QApplication \
@@ -413,7 +414,6 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qlayout.h \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qlayoutitem.h \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qboxlayout.h \
- C:/msys64/ucrt64/include/qt6/QtWidgets/QHBoxLayout \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QLabel \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qlabel.h \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qframe.h \
@@ -427,6 +427,23 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: \
  C:/msys64/ucrt64/include/qt6/QtGui/qtextformat.h \
  C:/msys64/ucrt64/include/qt6/QtGui/qpen.h \
  C:/msys64/ucrt64/include/qt6/QtGui/qtextoption.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/QListWidget \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qlistwidget.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qlistview.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qabstractitemview.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qabstractscrollarea.h \
+ C:/msys64/ucrt64/include/qt6/QtCore/qabstractitemmodel.h \
+ C:/msys64/ucrt64/include/qt6/QtCore/qitemselectionmodel.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qabstractitemdelegate.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qstyleoption.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qabstractspinbox.h \
+ C:/msys64/ucrt64/include/qt6/QtGui/qvalidator.h \
+ C:/msys64/ucrt64/include/qt6/QtCore/qregularexpression.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qslider.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qabstractslider.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qstyle.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qtabbar.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qrubberband.h \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QMainWindow \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QMenuBar \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qmenubar.h \
@@ -438,7 +455,6 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qstatusbar.h \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QTextEdit \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qtextedit.h \
- C:/msys64/ucrt64/include/qt6/QtWidgets/qabstractscrollarea.h \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QVBoxLayout \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QWidget \
  C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\EnviadorEmail.hpp \
@@ -876,6 +892,8 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: \
  C:/msys64/ucrt64/include/qt6/QtCore/qfileinfo.h \
  C:/msys64/ucrt64/include/qt6/QtCore/qtimezone.h \
  C:/msys64/ucrt64/include/qt6/QtCore/QFileInfo \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/QMenu \
+ C:/msys64/ucrt64/include/qt6/QtGui/QAction \
  C:/msys64/ucrt64/include/c++/16.1.0/thread \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/std_thread.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/this_thread_sleep.h
