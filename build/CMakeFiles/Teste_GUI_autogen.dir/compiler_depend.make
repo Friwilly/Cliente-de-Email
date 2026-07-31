@@ -214,6 +214,7 @@ Teste_GUI_autogen/timestamp: C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Pr
   C:/msys64/ucrt64/include/pthread_signal.h \
   C:/msys64/ucrt64/include/pthread_time.h \
   C:/msys64/ucrt64/include/pthread_unistd.h \
+  C:/msys64/ucrt64/include/qt6/QtCore/QPoint \
   C:/msys64/ucrt64/include/qt6/QtCore/q17memory.h \
   C:/msys64/ucrt64/include/qt6/QtCore/q20bit.h \
   C:/msys64/ucrt64/include/qt6/QtCore/q20functional.h \
@@ -705,7 +706,7 @@ C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake:
 
-C:/msys64/ucrt64/include/qt6/QtCore/qforeach.h:
+C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake:
 
 C:/msys64/ucrt64/include/qt6/QtCore/qfloat16.h:
 
@@ -800,6 +801,10 @@ C:/msys64/ucrt64/include/c++/16.1.0/backward/binders.h:
 C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake:
 
 C:/msys64/ucrt64/include/qt6/QtCore/qttypetraits.h:
+
+C:/msys64/ucrt64/include/qt6/QtCore/QPoint:
+
+C:/msys64/ucrt64/include/c++/16.1.0/chrono:
 
 C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/error_constants.h:
 
@@ -1151,8 +1156,6 @@ C:/msys64/ucrt64/include/qt6/QtCore/q17memory.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/shared_ptr_atomic.h:
 
-C:/msys64/ucrt64/include/c++/16.1.0/chrono:
-
 C:/msys64/ucrt64/include/_mingw_stdarg.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/specfun.h:
@@ -1287,6 +1290,8 @@ C:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stringfwd.h:
 
+C:/msys64/ucrt64/include/qt6/QtCore/qforeach.h:
+
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stdexcept_throwfwd.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/atomic_word.h:
@@ -1324,8 +1329,6 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_iterator_base_funcs.h:
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_map.h:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/exception_ptr.h:
 

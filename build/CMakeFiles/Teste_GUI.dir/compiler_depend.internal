@@ -823,6 +823,7 @@ CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj
  C:/msys64/ucrt64/include/pthread_signal.h
  C:/msys64/ucrt64/include/pthread_time.h
  C:/msys64/ucrt64/include/pthread_unistd.h
+ C:/msys64/ucrt64/include/qt6/QtCore/QPoint
  C:/msys64/ucrt64/include/qt6/QtCore/q17memory.h
  C:/msys64/ucrt64/include/qt6/QtCore/q20algorithm.h
  C:/msys64/ucrt64/include/qt6/QtCore/q20bit.h
@@ -1227,6 +1228,7 @@ CMakeFiles/Teste_GUI.dir/main.cpp.obj
  C:/msys64/ucrt64/include/pthread_signal.h
  C:/msys64/ucrt64/include/pthread_time.h
  C:/msys64/ucrt64/include/pthread_unistd.h
+ C:/msys64/ucrt64/include/qt6/QtCore/QPoint
  C:/msys64/ucrt64/include/qt6/QtCore/q17memory.h
  C:/msys64/ucrt64/include/qt6/QtCore/q20bit.h
  C:/msys64/ucrt64/include/qt6/QtCore/q20functional.h
@@ -1760,6 +1762,7 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj
  C:/msys64/ucrt64/include/pthread_unistd.h
  C:/msys64/ucrt64/include/qos.h
  C:/msys64/ucrt64/include/qt6/QtCore/QFileInfo
+ C:/msys64/ucrt64/include/qt6/QtCore/QPoint
  C:/msys64/ucrt64/include/qt6/QtCore/QVariant
  C:/msys64/ucrt64/include/qt6/QtCore/q17memory.h
  C:/msys64/ucrt64/include/qt6/QtCore/q20bit.h
@@ -1911,6 +1914,7 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj
  C:/msys64/ucrt64/include/qt6/QtCore/qversiontagging.h
  C:/msys64/ucrt64/include/qt6/QtCore/qxptype_traits.h
  C:/msys64/ucrt64/include/qt6/QtCore/qyieldcpu.h
+ C:/msys64/ucrt64/include/qt6/QtGui/QAction
  C:/msys64/ucrt64/include/qt6/QtGui/qaction.h
  C:/msys64/ucrt64/include/qt6/QtGui/qbitmap.h
  C:/msys64/ucrt64/include/qt6/QtGui/qbrush.h
@@ -1950,10 +1954,12 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj
  C:/msys64/ucrt64/include/qt6/QtWidgets/QApplication
  C:/msys64/ucrt64/include/qt6/QtWidgets/QFileDialog
  C:/msys64/ucrt64/include/qt6/QtWidgets/QGridLayout
+ C:/msys64/ucrt64/include/qt6/QtWidgets/QInputDialog
  C:/msys64/ucrt64/include/qt6/QtWidgets/QLabel
  C:/msys64/ucrt64/include/qt6/QtWidgets/QLineEdit
  C:/msys64/ucrt64/include/qt6/QtWidgets/QListWidget
  C:/msys64/ucrt64/include/qt6/QtWidgets/QMainWindow
+ C:/msys64/ucrt64/include/qt6/QtWidgets/QMenu
  C:/msys64/ucrt64/include/qt6/QtWidgets/QMenuBar
  C:/msys64/ucrt64/include/qt6/QtWidgets/QMessageBox
  C:/msys64/ucrt64/include/qt6/QtWidgets/QPushButton
@@ -1974,6 +1980,7 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj
  C:/msys64/ucrt64/include/qt6/QtWidgets/qfiledialog.h
  C:/msys64/ucrt64/include/qt6/QtWidgets/qframe.h
  C:/msys64/ucrt64/include/qt6/QtWidgets/qgridlayout.h
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qinputdialog.h
  C:/msys64/ucrt64/include/qt6/QtWidgets/qlabel.h
  C:/msys64/ucrt64/include/qt6/QtWidgets/qlayout.h
  C:/msys64/ucrt64/include/qt6/QtWidgets/qlayoutitem.h

@@ -21,6 +21,7 @@ private slots:
     void on_bntAnexo_clicked();
     void mostrarMenuContextoLista(const QPoint &pos);
     void removerAnexo();
+    void renomearAnexo();
 
 private:
     Ui::MainWindow *ui;

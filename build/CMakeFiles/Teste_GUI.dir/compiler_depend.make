@@ -821,6 +821,7 @@ CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj: Teste_GUI_a
   C:/msys64/ucrt64/include/pthread_signal.h \
   C:/msys64/ucrt64/include/pthread_time.h \
   C:/msys64/ucrt64/include/pthread_unistd.h \
+  C:/msys64/ucrt64/include/qt6/QtCore/QPoint \
   C:/msys64/ucrt64/include/qt6/QtCore/q17memory.h \
   C:/msys64/ucrt64/include/qt6/QtCore/q20algorithm.h \
   C:/msys64/ucrt64/include/qt6/QtCore/q20bit.h \
@@ -1224,6 +1225,7 @@ CMakeFiles/Teste_GUI.dir/main.cpp.obj: C:/Users/ALESSANDRA/Documents/Faculdade/p
   C:/msys64/ucrt64/include/pthread_signal.h \
   C:/msys64/ucrt64/include/pthread_time.h \
   C:/msys64/ucrt64/include/pthread_unistd.h \
+  C:/msys64/ucrt64/include/qt6/QtCore/QPoint \
   C:/msys64/ucrt64/include/qt6/QtCore/q17memory.h \
   C:/msys64/ucrt64/include/qt6/QtCore/q20bit.h \
   C:/msys64/ucrt64/include/qt6/QtCore/q20functional.h \
@@ -1756,6 +1758,7 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: C:/Users/ALESSANDRA/Documents/Facul
   C:/msys64/ucrt64/include/pthread_unistd.h \
   C:/msys64/ucrt64/include/qos.h \
   C:/msys64/ucrt64/include/qt6/QtCore/QFileInfo \
+  C:/msys64/ucrt64/include/qt6/QtCore/QPoint \
   C:/msys64/ucrt64/include/qt6/QtCore/QVariant \
   C:/msys64/ucrt64/include/qt6/QtCore/q17memory.h \
   C:/msys64/ucrt64/include/qt6/QtCore/q20bit.h \
@@ -1907,6 +1910,7 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: C:/Users/ALESSANDRA/Documents/Facul
   C:/msys64/ucrt64/include/qt6/QtCore/qversiontagging.h \
   C:/msys64/ucrt64/include/qt6/QtCore/qxptype_traits.h \
   C:/msys64/ucrt64/include/qt6/QtCore/qyieldcpu.h \
+  C:/msys64/ucrt64/include/qt6/QtGui/QAction \
   C:/msys64/ucrt64/include/qt6/QtGui/qaction.h \
   C:/msys64/ucrt64/include/qt6/QtGui/qbitmap.h \
   C:/msys64/ucrt64/include/qt6/QtGui/qbrush.h \
@@ -1946,10 +1950,12 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: C:/Users/ALESSANDRA/Documents/Facul
   C:/msys64/ucrt64/include/qt6/QtWidgets/QApplication \
   C:/msys64/ucrt64/include/qt6/QtWidgets/QFileDialog \
   C:/msys64/ucrt64/include/qt6/QtWidgets/QGridLayout \
+  C:/msys64/ucrt64/include/qt6/QtWidgets/QInputDialog \
   C:/msys64/ucrt64/include/qt6/QtWidgets/QLabel \
   C:/msys64/ucrt64/include/qt6/QtWidgets/QLineEdit \
   C:/msys64/ucrt64/include/qt6/QtWidgets/QListWidget \
   C:/msys64/ucrt64/include/qt6/QtWidgets/QMainWindow \
+  C:/msys64/ucrt64/include/qt6/QtWidgets/QMenu \
   C:/msys64/ucrt64/include/qt6/QtWidgets/QMenuBar \
   C:/msys64/ucrt64/include/qt6/QtWidgets/QMessageBox \
   C:/msys64/ucrt64/include/qt6/QtWidgets/QPushButton \
@@ -1970,6 +1976,7 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: C:/Users/ALESSANDRA/Documents/Facul
   C:/msys64/ucrt64/include/qt6/QtWidgets/qfiledialog.h \
   C:/msys64/ucrt64/include/qt6/QtWidgets/qframe.h \
   C:/msys64/ucrt64/include/qt6/QtWidgets/qgridlayout.h \
+  C:/msys64/ucrt64/include/qt6/QtWidgets/qinputdialog.h \
   C:/msys64/ucrt64/include/qt6/QtWidgets/qlabel.h \
   C:/msys64/ucrt64/include/qt6/QtWidgets/qlayout.h \
   C:/msys64/ucrt64/include/qt6/QtWidgets/qlayoutitem.h \
@@ -2362,6 +2369,14 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/tmmintrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/tbmintrin.h:
 
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/sm4intrin.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/sm3intrin.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/shaintrin.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/sha512intrin.h:
+
 C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
 
 C:/msys64/ucrt64/include/vmime/vmime.hpp:
@@ -2521,6 +2536,8 @@ C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 C:/msys64/ucrt64/include/vmime/component.hpp:
 
 C:/msys64/ucrt64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake:
+
+C:/msys64/ucrt64/include/qt6/QtWidgets/QMenu:
 
 C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake:
 
@@ -3118,8 +3135,6 @@ C:/msys64/ucrt64/include/crtdefs.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_multimap.h:
 
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/sm4intrin.h:
-
 C:/msys64/ucrt64/include/c++/16.1.0/cstring:
 
 C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++config.h:
@@ -3380,8 +3395,6 @@ C:/msys64/ucrt64/include/qt6/QtCore/qversiontagging.h:
 
 C:/msys64/ucrt64/include/consoleapi.h:
 
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/sha512intrin.h:
-
 C:/msys64/ucrt64/include/c++/16.1.0/tr1/poly_laguerre.tcc:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake:
@@ -3560,8 +3573,6 @@ C:/msys64/ucrt64/include/mmsyscom.h:
 
 C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake:
-
 C:/msys64/ucrt64/include/malloc.h:
 
 C:/msys64/ucrt64/include/pthread_unistd.h:
@@ -3695,6 +3706,8 @@ C:/msys64/ucrt64/include/vmime/encoding.hpp:
 C:/msys64/ucrt64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake:
+
+C:/msys64/ucrt64/include/qt6/QtWidgets/QInputDialog:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake:
 
@@ -4126,6 +4139,10 @@ C:/msys64/ucrt64/include/qt6/QtWidgets/qstyle.h:
 
 C:/msys64/ucrt64/include/qt6/QtCore/qurl.h:
 
+C:/msys64/ucrt64/include/qt6/QtGui/QAction:
+
+C:/msys64/ucrt64/include/qt6/QtWidgets/qslider.h:
+
 C:/msys64/ucrt64/include/qt6/QtCore/qbytearrayalgorithms.h:
 
 C:/msys64/ucrt64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake:
@@ -4202,6 +4219,10 @@ C:/msys64/ucrt64/include/qt6/QtWidgets/qgridlayout.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/gfniintrin.h:
 
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake:
+
+C:/msys64/ucrt64/include/qt6/QtWidgets/qinputdialog.h:
+
 C:/msys64/ucrt64/include/qt6/QtWidgets/qlayout.h:
 
 C:/msys64/ucrt64/include/qt6/QtWidgets/qlistview.h:
@@ -4211,8 +4232,6 @@ C:/msys64/ucrt64/include/qt6/QtWidgets/qmessagebox.h:
 C:/msys64/ucrt64/include/vmime/mdn/MDNHelper.hpp:
 
 C:/msys64/ucrt64/include/qt6/QtWidgets/qpushbutton.h:
-
-C:/msys64/ucrt64/include/qt6/QtWidgets/qslider.h:
 
 C:/msys64/ucrt64/include/qt6/QtWidgets/qstatusbar.h:
 
@@ -4591,7 +4610,3 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/prfchwintrin.h:
 C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/serializeintrin.h:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/shaintrin.h:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/sm3intrin.h:

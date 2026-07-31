@@ -891,6 +891,8 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: \
  C:/msys64/ucrt64/include/qt6/QtCore/qfile.h \
  C:/msys64/ucrt64/include/qt6/QtCore/qfileinfo.h \
  C:/msys64/ucrt64/include/qt6/QtCore/qtimezone.h \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/QInputDialog \
+ C:/msys64/ucrt64/include/qt6/QtWidgets/qinputdialog.h \
  C:/msys64/ucrt64/include/qt6/QtCore/QFileInfo \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QMenu \
  C:/msys64/ucrt64/include/qt6/QtGui/QAction \

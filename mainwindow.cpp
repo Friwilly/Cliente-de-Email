@@ -3,6 +3,7 @@
 #include "EnviadorEmail.hpp"
 #include <QMessageBox> // Para mostrar janelas de alerta popups
 #include <QFileDialog> // Para abrir a janela de seleção
+#include <QInputDialog> // para renomear
 #include <QFileInfo> // Para extrair o nome do arquivo
 #include <QMenu>
 #include <QAction>
@@ -63,9 +64,13 @@ void MainWindow::on_bntEnviar_clicked() {
     ui->bntEnviar->setEnabled(false);
     ui->bntEnviar->setText("Enviando...");
 
-    std::vector<std::string> listaAnexos;
-    for(const QString& caminho : caminhosAnexos) {
-        listaAnexos.push_back(caminho.toStdString());
+    std::vector<std::pair<std::string, std::string>> listaAnexos;
+    //Percorre a lista visual e a lista oculta de caminhos ao mesmo tempo
+    for(int i = 0; i < ui->lista_anexos->count(); ++i) {
+        std::string caminhoReal = caminhosAnexos[i].toStdString();
+        std::string nomeNaTela = ui->lista_anexos->item(i)->text().toStdString();
+
+        listaAnexos.push_back({caminhoReal, nomeNaTela});
     }
 
     std::thread([=]() {
@@ -104,13 +109,28 @@ void MainWindow::mostrarMenuContextoLista(const QPoint &pos) {
 
     // Cria o menu
     QMenu menu(this);
+    QAction *acaoRenomear = menu.addAction("Renomear");
     QAction *acaoRemover = menu.addAction("Remover");
 
-    // conecta a opção "Remover" a nossa função de remoção
+    connect(acaoRenomear, &QAction::triggered, this, &MainWindow::renomearAnexo);
     connect(acaoRemover, &QAction::triggered, this, &MainWindow::removerAnexo);
 
     //Exibe o menu na exata posição do mouse na tela
     menu.exec(ui->lista_anexos->mapToGlobal(pos));
+}
+
+void MainWindow::renomearAnexo() {
+    QListWidgetItem *item = ui->lista_anexos->currentItem();
+    if(!item) return;
+
+    bool ok;
+    // Abre uma janelinha pop-up pedindo para o usuario digitar o novo
+    QString novoNome = QInputDialog::getText(this, "Renomear Anexo", "Digite o novo nome do arquivo (com a extensão)", QLineEdit::Normal, item->text(), &ok);
+
+    if(ok && !novoNome.isEmpty()) {
+        item->setText(novoNome);
+    }
+
 }
 
 // esta função efetivamente deleta o anexo

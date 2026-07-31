@@ -4,6 +4,7 @@
 #include <string>
 #include <vmime/vmime.hpp>
 #include <vmime/platforms/windows/windowsHandler.hpp>
+#include <utility>
 
 class SmartCertificateVerifier : public vmime::security::cert::certificateVerifier {
 public:
@@ -15,7 +16,7 @@ public:
 class EnviadorEmail {
 public:
     //retorna true se enviou ou lança uma string com erro
-    static bool enviar(const std::string& remetente, const std::string& senha, const std::string& destinatario, const std::string& assunto, const std::string& corpo, const std::vector<std::string>& Anexos) 
+    static bool enviar(const std::string& remetente, const std::string& senha, const std::string& destinatario, const std::string& assunto, const std::string& corpo, const std::vector<std::pair<std::string, std::string>>& Anexos) 
     {
         vmime::messageBuilder email;
         email.setExpeditor(vmime::mailbox(remetente));
@@ -28,20 +29,19 @@ public:
         email.getTextPart()->setText(vmime::make_shared<vmime::stringContentHandler>(corpo));
 
         // LEMBRAR DE POR A LOGICA DO ANEXO AQUI DPS DO PRIMEIRO TESTE
-        for (const std::string& caminho : Anexos) {
-            if(!caminho.empty()) {
-                // extrai apenas o nome e extensão
-                size_t pos = caminho.find_last_of("/\\");
-                std::string nomeArquivo = (pos != std::string::npos) ? caminho.substr(pos + 1) : caminho;
+        for(const auto& parAnexo : Anexos) {
+            const std::string& caminhoReal = parAnexo.first;
+            const std::string& nomePersonalizado = parAnexo.second;
 
-                // 2. Cria o anexo usanto o tipo generico, mas com o nome real
+            if(!caminhoReal.empty()) {
+                // Criar o anexo lendo do caminho real, mas usando o nome personalizado
                 vmime::shared_ptr<vmime::fileAttachment> anexo = vmime::make_shared<vmime::fileAttachment>(
-                    caminho,
-                    vmime::mediaType("application/octet-stream"),
-                    vmime::text(nomeArquivo)
+                    caminhoReal,
+                    vmime::mediaType("Application/octet-stream"),
+                    vmime::text(nomePersonalizado)
                 );
 
-                anexo->getFileInfo().setFilename(nomeArquivo);
+                anexo->getFileInfo().setFilename(nomePersonalizado);
                 email.appendAttachment(anexo);
             }
         }
