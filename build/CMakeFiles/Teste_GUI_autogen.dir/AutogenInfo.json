@@ -274,7 +274,8 @@
 		"C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake",
 		"C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
-		"C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake"
+		"C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
+		"C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/recursos.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes",
 	"CROSS_CONFIG" : false,

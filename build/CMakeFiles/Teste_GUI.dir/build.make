@@ -75,6 +75,15 @@ Teste_GUI_autogen/timestamp: CMakeFiles/Teste_GUI.dir/compiler_depend.ts
 	C:\msys64\ucrt64\bin\cmake.exe -E cmake_autogen C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/CMakeFiles/Teste_GUI_autogen.dir/AutogenInfo.json ""
 	C:\msys64\ucrt64\bin\cmake.exe -E touch C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/Teste_GUI_autogen/timestamp
 
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/recursos.qrc
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp: CMakeFiles/Teste_GUI_autogen.dir/AutoRcc_recursos_EWIEGA46WW_Info.json
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/icone_acoma.png
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/logo_acoma.png
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/msys64/ucrt64/share/qt6/bin/rcc.exe
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/msys64/ucrt64/share/qt6/bin/rcc.exe
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for recursos.qrc"
+	C:\msys64\ucrt64\bin\cmake.exe -E cmake_autorcc C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/CMakeFiles/Teste_GUI_autogen.dir/AutoRcc_recursos_EWIEGA46WW_Info.json 
+
 CMakeFiles/Teste_GUI.dir/codegen:
 .PHONY : CMakeFiles/Teste_GUI.dir/codegen
 
@@ -82,7 +91,7 @@ CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj: CMakeFiles/
 CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj: CMakeFiles/Teste_GUI.dir/includes_CXX.rsp
 CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj: Teste_GUI_autogen/mocs_compilation.cpp
 CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj: CMakeFiles/Teste_GUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Teste_GUI.dir\Teste_GUI_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Teste_GUI.dir\Teste_GUI_autogen\mocs_compilation.cpp.obj -c C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\Teste_GUI_autogen\mocs_compilation.cpp
 
 CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.i: cmake_force
@@ -97,7 +106,7 @@ CMakeFiles/Teste_GUI.dir/main.cpp.obj: CMakeFiles/Teste_GUI.dir/flags.make
 CMakeFiles/Teste_GUI.dir/main.cpp.obj: CMakeFiles/Teste_GUI.dir/includes_CXX.rsp
 CMakeFiles/Teste_GUI.dir/main.cpp.obj: C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/main.cpp
 CMakeFiles/Teste_GUI.dir/main.cpp.obj: CMakeFiles/Teste_GUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Teste_GUI.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Teste_GUI.dir/main.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Teste_GUI.dir/main.cpp.obj -MF CMakeFiles\Teste_GUI.dir\main.cpp.obj.d -o CMakeFiles\Teste_GUI.dir\main.cpp.obj -c C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\main.cpp
 
 CMakeFiles/Teste_GUI.dir/main.cpp.i: cmake_force
@@ -112,7 +121,7 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: CMakeFiles/Teste_GUI.dir/flags.make
 CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: CMakeFiles/Teste_GUI.dir/includes_CXX.rsp
 CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.cpp
 CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: CMakeFiles/Teste_GUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj -MF CMakeFiles\Teste_GUI.dir\mainwindow.cpp.obj.d -o CMakeFiles\Teste_GUI.dir\mainwindow.cpp.obj -c C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\mainwindow.cpp
 
 CMakeFiles/Teste_GUI.dir/mainwindow.cpp.i: cmake_force
@@ -123,11 +132,33 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Teste_GUI.dir/mainwindow.cpp.s"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\mainwindow.cpp -o CMakeFiles\Teste_GUI.dir\mainwindow.cpp.s
 
+CMakeFiles/Teste_GUI.dir/icone_app.rc.obj: CMakeFiles/Teste_GUI.dir/flags.make
+CMakeFiles/Teste_GUI.dir/icone_app.rc.obj: C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/icone_app.rc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building RC object CMakeFiles/Teste_GUI.dir/icone_app.rc.obj"
+	C:\msys64\ucrt64\bin\windres.exe -O coff $(RC_DEFINES) $(RC_INCLUDES) $(RC_FLAGS) C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\icone_app.rc CMakeFiles\Teste_GUI.dir\icone_app.rc.obj
+
+CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj: CMakeFiles/Teste_GUI.dir/flags.make
+CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj: CMakeFiles/Teste_GUI.dir/includes_CXX.rsp
+CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj: Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp
+CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj: CMakeFiles/Teste_GUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj -MF CMakeFiles\Teste_GUI.dir\Teste_GUI_autogen\EWIEGA46WW\qrc_recursos.cpp.obj.d -o CMakeFiles\Teste_GUI.dir\Teste_GUI_autogen\EWIEGA46WW\qrc_recursos.cpp.obj -c C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\Teste_GUI_autogen\EWIEGA46WW\qrc_recursos.cpp
+
+CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\Teste_GUI_autogen\EWIEGA46WW\qrc_recursos.cpp > CMakeFiles\Teste_GUI.dir\Teste_GUI_autogen\EWIEGA46WW\qrc_recursos.cpp.i
+
+CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\Teste_GUI_autogen\EWIEGA46WW\qrc_recursos.cpp -o CMakeFiles\Teste_GUI.dir\Teste_GUI_autogen\EWIEGA46WW\qrc_recursos.cpp.s
+
 # Object files for target Teste_GUI
 Teste_GUI_OBJECTS = \
 "CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/Teste_GUI.dir/main.cpp.obj" \
-"CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj"
+"CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj" \
+"CMakeFiles/Teste_GUI.dir/icone_app.rc.obj" \
+"CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj"
 
 # External object files for target Teste_GUI
 Teste_GUI_EXTERNAL_OBJECTS =
@@ -135,6 +166,8 @@ Teste_GUI_EXTERNAL_OBJECTS =
 Teste_GUI.exe: CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj
 Teste_GUI.exe: CMakeFiles/Teste_GUI.dir/main.cpp.obj
 Teste_GUI.exe: CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj
+Teste_GUI.exe: CMakeFiles/Teste_GUI.dir/icone_app.rc.obj
+Teste_GUI.exe: CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj
 Teste_GUI.exe: CMakeFiles/Teste_GUI.dir/build.make
 Teste_GUI.exe: C:/msys64/ucrt64/lib/libQt6Widgets.dll.a
 Teste_GUI.exe: C:/msys64/ucrt64/lib/libQt6Gui.dll.a
@@ -142,7 +175,7 @@ Teste_GUI.exe: C:/msys64/ucrt64/lib/libQt6Core.dll.a
 Teste_GUI.exe: CMakeFiles/Teste_GUI.dir/linkLibs.rsp
 Teste_GUI.exe: CMakeFiles/Teste_GUI.dir/objects1.rsp
 Teste_GUI.exe: CMakeFiles/Teste_GUI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Teste_GUI.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Teste_GUI.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Teste_GUI.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +186,7 @@ CMakeFiles/Teste_GUI.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles\Teste_GUI.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/Teste_GUI.dir/clean
 
+CMakeFiles/Teste_GUI.dir/depend: Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp
 CMakeFiles/Teste_GUI.dir/depend: Teste_GUI_autogen/timestamp
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles\Teste_GUI.dir\DependInfo.cmake "--color=$(COLOR)" Teste_GUI
 .PHONY : CMakeFiles/Teste_GUI.dir/depend

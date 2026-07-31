@@ -10,6 +10,7 @@ Teste_GUI_autogen/timestamp: C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Pr
   C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.cpp \
   C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.h \
   C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.ui \
+  C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/recursos.qrc \
   C:/msys64/ucrt64/bin/cmake.exe \
   C:/msys64/ucrt64/include/_mingw.h \
   C:/msys64/ucrt64/include/_mingw_mac.h \
@@ -708,7 +709,7 @@ C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTarg
 
 C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake:
 
-C:/msys64/ucrt64/include/qt6/QtCore/qfloat16.h:
+C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
 
 C:/msys64/ucrt64/include/qt6/QtCore/qconfig.h:
 
@@ -743,6 +744,8 @@ C:/msys64/ucrt64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake:
 C:/msys64/ucrt64/include/c++/16.1.0/ext/numeric_traits.h:
 
 C:/msys64/ucrt64/include/qt6/QtCore/q23utility.h:
+
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/recursos.qrc:
 
 C:/msys64/ucrt64/include/qt6/QtCore/q20type_traits.h:
 
@@ -807,8 +810,6 @@ C:/msys64/ucrt64/include/qt6/QtCore/QPoint:
 C:/msys64/ucrt64/include/c++/16.1.0/chrono:
 
 C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/error_constants.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++locale.h:
 
 C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
 
@@ -938,6 +939,10 @@ C:/msys64/ucrt64/include/qt6/QtCore/qlist.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/cstdint:
 
+C:/msys64/ucrt64/include/c++/16.1.0/cstddef:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake:
+
 C:/msys64/ucrt64/include/corecrt_wctype.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_uninitialized.h:
@@ -971,8 +976,6 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/postypes.h:
 C:/msys64/ucrt64/include/c++/16.1.0/bits/exception.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/localefwd.h:
-
-C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
 
 C:/msys64/ucrt64/include/c++/16.1.0/string_view:
 
@@ -1132,6 +1135,18 @@ C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QGifPluginTargetsPrecheck.cmake:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_tempbuf.h:
 
+C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++locale.h:
+
+C:/msys64/ucrt64/include/stddef.h:
+
+C:/msys64/ucrt64/include/locale.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_set.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/string:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/vector.tcc:
+
 C:/msys64/ucrt64/include/qt6/QtCore/qtaggedpointer.h:
 
 C:/msys64/ucrt64/bin/cmake.exe:
@@ -1160,6 +1175,18 @@ C:/msys64/ucrt64/include/_mingw_stdarg.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/specfun.h:
 
+C:/msys64/ucrt64/include/c++/16.1.0/bits/streambuf.tcc:
+
+C:/msys64/ucrt64/include/qt6/QtCore/qtdeprecationmarkers.h:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake:
+
+C:/msys64/ucrt64/include/_timeval.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_vector.h:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
+
 C:/msys64/ucrt64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessAliasTargets.cmake:
 
 C:/msys64/ucrt64/include/qt6/QtCore/q20utility.h:
@@ -1176,35 +1203,19 @@ C:/msys64/ucrt64/include/c++/16.1.0/clocale:
 
 C:/msys64/ucrt64/include/qt6/QtCore/qsize.h:
 
-C:/msys64/ucrt64/include/c++/16.1.0/bits/erase_if.h:
-
-C:/msys64/ucrt64/include/qt6/QtWidgets/qwidget.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bit:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/streambuf.tcc:
-
-C:/msys64/ucrt64/include/qt6/QtCore/qtdeprecationmarkers.h:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake:
-
-C:/msys64/ucrt64/include/_timeval.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_vector.h:
-
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h:
-
 CMakeFiles/4.4.0/CMakeRCCompiler.cmake:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_raw_storage_iter.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/uses_allocator_args.h:
 
-C:/msys64/ucrt64/include/qt6/QtCore/qalgorithms.h:
+C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h:
 
-C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/CMakeLists.txt:
+C:/msys64/ucrt64/include/c++/16.1.0/bits/erase_if.h:
+
+C:/msys64/ucrt64/include/qt6/QtWidgets/qwidget.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bit:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_construct.h:
 
@@ -1214,11 +1225,11 @@ C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake:
 
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/CMakeLists.txt:
+
+C:/msys64/ucrt64/include/qt6/QtCore/qalgorithms.h:
+
 C:/msys64/ucrt64/include/c++/16.1.0/bits/allocated_ptr.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/cstddef:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/new_except.h:
 
@@ -1233,16 +1244,6 @@ C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicTestHelpers.cmake:
 C:/msys64/ucrt64/include/c++/16.1.0/bits/unordered_map.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/parse_numbers.h:
-
-C:/msys64/ucrt64/include/stddef.h:
-
-C:/msys64/ucrt64/include/locale.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_set.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/string:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/vector.tcc:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/predefined_ops.h:
 
@@ -1383,6 +1384,8 @@ C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake:
 C:/msys64/ucrt64/include/qt6/QtCore/qobjectdefs_impl.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/compare:
+
+C:/msys64/ucrt64/include/qt6/QtCore/qfloat16.h:
 
 C:/msys64/ucrt64/include/swprintf.inl:
 
@@ -1784,9 +1787,9 @@ C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake:
 
-C:/msys64/ucrt64/include/c++/16.1.0/type_traits:
-
 C:/msys64/ucrt64/include/qt6/QtCore/qstringview.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/type_traits:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake:
 

@@ -6,34 +6,41 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>450</height>
+    <width>896</width>
+    <height>594</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Correio Illit</string>
+   <string>Sistema de comunicação acoma</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/icone_acoma.png</normaloff>:/icone_acoma.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_titulo">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>0</y>
-      <width>121</width>
-      <height>20</height>
+      <x>280</x>
+      <y>-40</y>
+      <width>321</width>
+      <height>261</height>
      </rect>
     </property>
-    <property name="text">
-     <string>CORREIO ACOMA</string>
+    <property name="pixmap">
+     <pixmap resource="recursos.qrc">:/logo_acoma.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>551</width>
-      <height>226</height>
+      <x>10</x>
+      <y>140</y>
+      <width>871</width>
+      <height>251</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -100,9 +107,9 @@
    <widget class="QListWidget" name="lista_anexos">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>300</y>
-      <width>251</width>
+      <x>30</x>
+      <y>440</y>
+      <width>361</width>
       <height>111</height>
      </rect>
     </property>
@@ -110,10 +117,10 @@
    <widget class="QPushButton" name="bntEnviar">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>270</y>
-      <width>261</width>
-      <height>29</height>
+      <x>490</x>
+      <y>400</y>
+      <width>361</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -123,19 +130,20 @@
    <widget class="QPushButton" name="bntAnexo">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>270</y>
-      <width>251</width>
-      <height>29</height>
+      <x>30</x>
+      <y>400</y>
+      <width>361</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
      <string>Anexar arquivo</string>
     </property>
    </widget>
+   <zorder>bntEnviar</zorder>
+   <zorder>bntAnexo</zorder>
    <zorder>layoutWidget</zorder>
    <zorder>label_titulo</zorder>
-   <zorder>horizontalLayoutWidget</zorder>
    <zorder>lista_anexos</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -143,13 +151,16 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>600</width>
+     <width>896</width>
      <height>26</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="recursos.qrc"/>
+  <include location="recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>

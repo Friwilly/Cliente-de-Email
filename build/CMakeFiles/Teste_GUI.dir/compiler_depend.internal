@@ -11,6 +11,7 @@ C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/Teste
  C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.cpp
  C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.h
  C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.ui
+ C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/recursos.qrc
  C:/msys64/ucrt64/bin/cmake.exe
  C:/msys64/ucrt64/include/_mingw.h
  C:/msys64/ucrt64/include/_mingw_mac.h
@@ -611,6 +612,9 @@ C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/Teste
  C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake
  C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake
  C:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake
+
+CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj
+ C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp
 
 CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj
  C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/Teste_GUI_autogen/mocs_compilation.cpp

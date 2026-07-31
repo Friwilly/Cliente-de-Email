@@ -154,6 +154,30 @@ Teste_GUI_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI_autogen.dir\build.make CMakeFiles/Teste_GUI_autogen.dir/build
 .PHONY : Teste_GUI_autogen/fast
 
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.obj: Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj
+.PHONY : Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.obj
+
+# target to build an object file
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI.dir\build.make CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj
+.PHONY : Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj
+
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.i: Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.i
+.PHONY : Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.i
+
+# target to preprocess a source file
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI.dir\build.make CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.i
+.PHONY : Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.i
+
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.s: Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.s
+.PHONY : Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.s
+
+# target to generate assembly for a file
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI.dir\build.make CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.s
+.PHONY : Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.s
+
 Teste_GUI_autogen/mocs_compilation.obj: Teste_GUI_autogen/mocs_compilation.cpp.obj
 .PHONY : Teste_GUI_autogen/mocs_compilation.obj
 
@@ -177,6 +201,14 @@ Teste_GUI_autogen/mocs_compilation.s: Teste_GUI_autogen/mocs_compilation.cpp.s
 Teste_GUI_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI.dir\build.make CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.s
 .PHONY : Teste_GUI_autogen/mocs_compilation.cpp.s
+
+icone_app.obj: icone_app.rc.obj
+.PHONY : icone_app.obj
+
+# target to build an object file
+icone_app.rc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI.dir\build.make CMakeFiles/Teste_GUI.dir/icone_app.rc.obj
+.PHONY : icone_app.rc.obj
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -237,9 +269,13 @@ help:
 	@echo ... Teste_GUI_autogen
 	@echo ... Teste_GUI_autogen_timestamp_deps
 	@echo ... Teste_GUI
+	@echo ... Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.obj
+	@echo ... Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.i
+	@echo ... Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.s
 	@echo ... Teste_GUI_autogen/mocs_compilation.obj
 	@echo ... Teste_GUI_autogen/mocs_compilation.i
 	@echo ... Teste_GUI_autogen/mocs_compilation.s
+	@echo ... icone_app.obj
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

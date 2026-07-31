@@ -395,6 +395,7 @@ CMakeFiles/Teste_GUI.dir/mainwindow.cpp.obj: \
  C:/msys64/ucrt64/include/qt6/QtCore/QPoint \
  C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/Teste_GUI_autogen/include/ui_mainwindow.h \
  C:/msys64/ucrt64/include/qt6/QtCore/QVariant \
+ C:/msys64/ucrt64/include/qt6/QtGui/QIcon \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QApplication \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qapplication.h \
  C:/msys64/ucrt64/include/qt6/QtCore/qcoreapplication.h \

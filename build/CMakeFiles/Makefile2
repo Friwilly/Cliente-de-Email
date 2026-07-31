@@ -83,16 +83,16 @@ clean: CMakeFiles/Teste_GUI_autogen.dir/clean
 # Target rules for target CMakeFiles/Teste_GUI.dir
 
 # All Build rule for target.
-CMakeFiles/Teste_GUI.dir/all: CMakeFiles/Teste_GUI_autogen_timestamp_deps.dir/all
 CMakeFiles/Teste_GUI.dir/all: CMakeFiles/Teste_GUI_autogen.dir/all
+CMakeFiles/Teste_GUI.dir/all: CMakeFiles/Teste_GUI_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI.dir\build.make CMakeFiles/Teste_GUI.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI.dir\build.make CMakeFiles/Teste_GUI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target Teste_GUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Teste_GUI"
 .PHONY : CMakeFiles/Teste_GUI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Teste_GUI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Teste_GUI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles 0
 .PHONY : CMakeFiles/Teste_GUI.dir/rule
@@ -102,10 +102,10 @@ Teste_GUI: CMakeFiles/Teste_GUI.dir/rule
 .PHONY : Teste_GUI
 
 # codegen rule for target.
-CMakeFiles/Teste_GUI.dir/codegen: CMakeFiles/Teste_GUI_autogen_timestamp_deps.dir/all
 CMakeFiles/Teste_GUI.dir/codegen: CMakeFiles/Teste_GUI_autogen.dir/all
+CMakeFiles/Teste_GUI.dir/codegen: CMakeFiles/Teste_GUI_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI.dir\build.make CMakeFiles/Teste_GUI.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target Teste_GUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target Teste_GUI"
 .PHONY : CMakeFiles/Teste_GUI.dir/codegen
 
 # clean rule for target.
@@ -152,7 +152,7 @@ CMakeFiles/Teste_GUI_autogen_timestamp_deps.dir/clean:
 CMakeFiles/Teste_GUI_autogen.dir/all: CMakeFiles/Teste_GUI_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI_autogen.dir\build.make CMakeFiles/Teste_GUI_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI_autogen.dir\build.make CMakeFiles/Teste_GUI_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=6 "Built target Teste_GUI_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=9 "Built target Teste_GUI_autogen"
 .PHONY : CMakeFiles/Teste_GUI_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -169,7 +169,7 @@ Teste_GUI_autogen: CMakeFiles/Teste_GUI_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/Teste_GUI_autogen.dir/codegen: CMakeFiles/Teste_GUI_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Teste_GUI_autogen.dir\build.make CMakeFiles/Teste_GUI_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=6 "Finished codegen for target Teste_GUI_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ALESSANDRA\Documents\Faculdade\projetos\Projeto_Final_Redes\build\CMakeFiles --progress-num=9 "Finished codegen for target Teste_GUI_autogen"
 .PHONY : CMakeFiles/Teste_GUI_autogen.dir/codegen
 
 # clean rule for target.

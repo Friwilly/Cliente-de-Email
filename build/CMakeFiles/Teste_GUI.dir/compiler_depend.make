@@ -10,6 +10,7 @@ Teste_GUI_autogen/timestamp: C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Pr
   C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.cpp \
   C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.h \
   C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.ui \
+  C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/recursos.qrc \
   C:/msys64/ucrt64/bin/cmake.exe \
   C:/msys64/ucrt64/include/_mingw.h \
   C:/msys64/ucrt64/include/_mingw_mac.h \
@@ -610,6 +611,8 @@ Teste_GUI_autogen/timestamp: C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Pr
   C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake \
   C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake \
   C:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake
+
+CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp.obj: Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp
 
 CMakeFiles/Teste_GUI.dir/Teste_GUI_autogen/mocs_compilation.cpp.obj: Teste_GUI_autogen/mocs_compilation.cpp \
   C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/mainwindow.h \
@@ -2377,6 +2380,8 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/shaintrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/sha512intrin.h:
 
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/sgxintrin.h:
+
 C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
 
 C:/msys64/ucrt64/include/vmime/vmime.hpp:
@@ -2419,9 +2424,9 @@ C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake:
 
 C:/msys64/ucrt64/include/vmime/utility/inputStreamAdapter.hpp:
 
-C:/msys64/ucrt64/include/qt6/QtCore/qstringview.h:
-
 C:/msys64/ucrt64/include/c++/16.1.0/type_traits:
+
+C:/msys64/ucrt64/include/qt6/QtCore/qstringview.h:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake:
 
@@ -2494,8 +2499,6 @@ C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake:
 C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake:
 
 C:/msys64/ucrt64/include/qt6/QtCore/qdebug.h:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/sgxintrin.h:
 
 C:/msys64/ucrt64/include/vmime/net/timeoutHandler.hpp:
 
@@ -2797,6 +2800,12 @@ C:/msys64/ucrt64/include/qt6/QtCore/qobject.h:
 
 C:/msys64/ucrt64/include/qt6/QtCore/qfunctionpointer.h:
 
+C:/msys64/ucrt64/include/qt6/QtCore/qfloat16.h:
+
+C:/msys64/ucrt64/include/qt6/QtGui/qtextoption.h:
+
+C:/msys64/ucrt64/include/vmime/messageParser.hpp:
+
 C:/msys64/ucrt64/include/c++/16.1.0/compare:
 
 C:/msys64/ucrt64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake:
@@ -2941,12 +2950,6 @@ C:/msys64/ucrt64/include/c++/16.1.0/tr1/beta_function.tcc:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/predefined_ops.h:
 
-C:/msys64/ucrt64/include/c++/16.1.0/bits/vector.tcc:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_set.h:
-
-C:/msys64/ucrt64/include/stddef.h:
-
 C:/msys64/ucrt64/include/stdint.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/parse_numbers.h:
@@ -2963,13 +2966,17 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/new_except.h:
 
 C:/msys64/ucrt64/include/qt6/QtWidgets/qrubberband.h:
 
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/avx10_2copyintrin.h:
-
 C:/msys64/ucrt64/include/qt6/QtGui/qfontmetrics.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/allocated_ptr.h:
+
+C:/msys64/ucrt64/include/qt6/QtCore/qalgorithms.h:
+
+C:/msys64/ucrt64/include/errhandlingapi.h:
+
+C:/msys64/ucrt64/include/winsvc.h:
+
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/CMakeLists.txt:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake:
 
@@ -2978,36 +2985,6 @@ C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
 C:/msys64/ucrt64/include/vmime/charsetConverter.hpp:
 
 C:/msys64/ucrt64/include/qt6/QtCore/qlatin1stringview.h:
-
-C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/CMakeLists.txt:
-
-C:/msys64/ucrt64/include/qt6/QtCore/qalgorithms.h:
-
-C:/msys64/ucrt64/include/errhandlingapi.h:
-
-C:/msys64/ucrt64/include/winsvc.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/uses_allocator_args.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_raw_storage_iter.h:
-
-CMakeFiles/4.4.0/CMakeRCCompiler.cmake:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_vector.h:
-
-C:/msys64/ucrt64/include/vmime/utility/progressListener.hpp:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake:
-
-C:/msys64/ucrt64/include/qt6/QtCore/qtdeprecationmarkers.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/streambuf.tcc:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bit:
 
@@ -3018,6 +2995,14 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/erase_if.h:
 C:/msys64/ucrt64/include/qt6/QtWidgets/qmenu.h:
 
 C:/msys64/ucrt64/include/vmime/utility/parserInputStreamAdapter.hpp:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/uses_allocator_args.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_raw_storage_iter.h:
+
+CMakeFiles/4.4.0/CMakeRCCompiler.cmake:
 
 C:/msys64/ucrt64/include/qt6/QtCore/qsize.h:
 
@@ -3034,6 +3019,20 @@ C:/msys64/ucrt64/include/qt6/QtCore/qtconfiginclude.h:
 C:/msys64/ucrt64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessAliasTargets.cmake:
 
 C:/msys64/ucrt64/include/objbase.h:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_vector.h:
+
+C:/msys64/ucrt64/include/vmime/utility/progressListener.hpp:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake:
+
+C:/msys64/ucrt64/include/qt6/QtCore/qtdeprecationmarkers.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/streambuf.tcc:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/specfun.h:
 
@@ -3070,6 +3069,14 @@ C:/msys64/ucrt64/include/vmime/security/defaultAuthenticator.hpp:
 C:/msys64/ucrt64/bin/cmake.exe:
 
 C:/msys64/ucrt64/include/vmime/headerField.hpp:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/vector.tcc:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_set.h:
+
+C:/msys64/ucrt64/include/stddef.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++locale.h:
 
 C:/msys64/ucrt64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
 
@@ -3124,10 +3131,6 @@ C:/msys64/ucrt64/include/vmime/mdn/sendableMDNInfos.hpp:
 C:/msys64/ucrt64/include/vmime/net/message.hpp:
 
 C:/msys64/ucrt64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/rtmintrin.h:
-
-C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/main.cpp:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/avx512vldqintrin.h:
 
@@ -3285,8 +3288,6 @@ C:/msys64/ucrt64/include/wincrypt.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/cpp_type_traits.h:
 
-C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
-
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/localefwd.h:
@@ -3322,6 +3323,14 @@ C:/msys64/ucrt64/include/qt6/QtCore/qstdlibdetection.h:
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargetsPrecheck.cmake:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_uninitialized.h:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake:
+
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/main.cpp:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/rtmintrin.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/avx10_2copyintrin.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/cstdint:
 
@@ -3503,8 +3512,6 @@ C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++allocator.h:
 
 C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
 
-C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++locale.h:
-
 C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/error_constants.h:
 
 C:/msys64/ucrt64/include/qt6/QtCore/qtresource.h:
@@ -3583,6 +3590,8 @@ CMakeFiles/4.4.0/CMakeCXXCompiler.cmake:
 
 C:/msys64/ucrt64/include/qt6/QtCore/q20type_traits.h:
 
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/recursos.qrc:
+
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake:
 
 C:/msys64/ucrt64/include/qt6/QtCore/q23utility.h:
@@ -3645,15 +3654,15 @@ C:/msys64/ucrt64/include/qt6/QtCore/qconfig.h:
 
 C:/msys64/ucrt64/include/vmime/security/cert/certificateException.hpp:
 
-C:/msys64/ucrt64/include/qt6/QtCore/qfloat16.h:
-
-C:/msys64/ucrt64/include/qt6/QtGui/qtextoption.h:
-
-C:/msys64/ucrt64/include/vmime/messageParser.hpp:
+C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/serializeintrin.h:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/vpclmulqdqintrin.h:
 
@@ -3797,13 +3806,15 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.tcc:
 
 C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake:
 
-C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake:
-
 C:/msys64/ucrt64/include/qt6/QtCore/qpoint.h:
 
 C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake:
+
+C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake:
+
+Teste_GUI_autogen/EWIEGA46WW/qrc_recursos.cpp:
 
 C:/msys64/ucrt64/include/math.h:
 
@@ -3914,6 +3925,10 @@ C:/msys64/ucrt64/include/winerror.h:
 C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.tcc:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets_nonio.tcc:
+
+C:/msys64/ucrt64/include/vmime/net/session.hpp:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/quoted_string.h:
 
@@ -4377,10 +4392,6 @@ C:/msys64/ucrt64/include/vmime/net/serviceFactory.hpp:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/avxneconvertintrin.h:
 
-C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.h:
-
-C:/msys64/ucrt64/include/vmime/net/session.hpp:
-
 C:/msys64/ucrt64/include/vmime/net/store.hpp:
 
 C:/msys64/ucrt64/include/vmime/net/tls/TLSProperties.hpp:
@@ -4606,7 +4617,3 @@ C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake:
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/prfchiintrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/prfchwintrin.h:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/serializeintrin.h:

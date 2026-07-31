@@ -10,6 +10,7 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
@@ -53,15 +54,20 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(600, 450);
+        MainWindow->resize(896, 594);
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/icone_acoma.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        MainWindow->setWindowIcon(icon);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         label_titulo = new QLabel(centralwidget);
         label_titulo->setObjectName("label_titulo");
-        label_titulo->setGeometry(QRect(230, 0, 121, 20));
+        label_titulo->setGeometry(QRect(280, -40, 321, 261));
+        label_titulo->setPixmap(QPixmap(QString::fromUtf8(":/logo_acoma.png")));
+        label_titulo->setScaledContents(true);
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(20, 30, 551, 226));
+        layoutWidget->setGeometry(QRect(10, 140, 871, 251));
         verticalLayout_3 = new QVBoxLayout(layoutWidget);
         verticalLayout_3->setObjectName("verticalLayout_3");
         verticalLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -123,20 +129,22 @@ public:
 
         lista_anexos = new QListWidget(centralwidget);
         lista_anexos->setObjectName("lista_anexos");
-        lista_anexos->setGeometry(QRect(20, 300, 251, 111));
+        lista_anexos->setGeometry(QRect(30, 440, 361, 111));
         bntEnviar = new QPushButton(centralwidget);
         bntEnviar->setObjectName("bntEnviar");
-        bntEnviar->setGeometry(QRect(310, 270, 261, 29));
+        bntEnviar->setGeometry(QRect(490, 400, 361, 31));
         bntAnexo = new QPushButton(centralwidget);
         bntAnexo->setObjectName("bntAnexo");
-        bntAnexo->setGeometry(QRect(20, 270, 251, 29));
+        bntAnexo->setGeometry(QRect(30, 400, 361, 31));
         MainWindow->setCentralWidget(centralwidget);
+        bntEnviar->raise();
+        bntAnexo->raise();
         layoutWidget->raise();
         label_titulo->raise();
         lista_anexos->raise();
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 600, 26));
+        menubar->setGeometry(QRect(0, 0, 896, 26));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -149,8 +157,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Correio Illit", nullptr));
-        label_titulo->setText(QCoreApplication::translate("MainWindow", "CORREIO ACOMA", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Sistema de comunica\303\247\303\243o acoma", nullptr));
         label_remetente->setText(QCoreApplication::translate("MainWindow", "Seu e-mail:", nullptr));
         label_senha->setText(QCoreApplication::translate("MainWindow", "Senha de App:", nullptr));
         label_destinatario->setText(QCoreApplication::translate("MainWindow", "Para:", nullptr));

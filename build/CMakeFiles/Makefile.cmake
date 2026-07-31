@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.4.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.0/CMakeRCCompiler.cmake"
   "CMakeFiles/4.4.0/CMakeSystem.cmake"
+  "C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/recursos.qrc"
   "C:/msys64/ucrt64/lib/cmake/Qt6/FindWrapAtomic.cmake"
   "C:/msys64/ucrt64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
   "C:/msys64/ucrt64/lib/cmake/Qt6/Qt6Config.cmake"
@@ -233,6 +234,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/Teste_GUI_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/Teste_GUI_autogen.dir/AutoRcc_recursos_EWIEGA46WW_Info.json"
   ".qt/QtDeploySupport.cmake"
   ".qt/QtDeployTargets.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"

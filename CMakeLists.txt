@@ -19,6 +19,8 @@ add_executable(Teste_GUI
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    recursos.qrc
+    icone_app.rc
 )
 
 # Conecta o seu executável com o Qt6 e com a biblioteca VMime
