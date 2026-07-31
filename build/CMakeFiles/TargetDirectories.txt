@@ -1,0 +1,5 @@
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/CMakeFiles/Teste_GUI.dir
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/CMakeFiles/edit_cache.dir
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/CMakeFiles/Teste_GUI_autogen_timestamp_deps.dir
+C:/Users/ALESSANDRA/Documents/Faculdade/projetos/Projeto_Final_Redes/build/CMakeFiles/Teste_GUI_autogen.dir
